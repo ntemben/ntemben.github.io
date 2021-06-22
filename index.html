@@ -18,26 +18,26 @@
     	<hr>
                   <div class="form-group">
              <label><b><p>Passenger Contact :</p> </b></label>
-            <input type="number" name="Passenger Contact"   required="" /><div>
+            <input type="number" name="Passenger Contact"   required="" placeholder="Enter Contact" /><div>
             </div>
             <label><b><p>Surname : </p></b></label>
-            <input type="text" name="Surname"   required="" /></div>
+            <input type="text" name="Surname"   required="" placeholder="Enter Surname" /></div>
           <div>
-            <label><b><p>Full Names : </p></b></label><input type="text" name="Full Names"   required="" /></div>
+            <label><b><p>Full Names : </p></b></label><input type="text" name="Full Names"   required="" placeholder="Enter Full Names"/></div>
             <div>
-            <label><b><p>Home Address : </p></b></label><input type="text" name="Home Address"   required="" /></td></div>
+            <label><b><p>Home Address : </p></b></label><input type="text" name="Home Address"   required="" placeholder="Enter Home Address"/></td></div>
             <div>
-            <label><b><p>Next of Kin Names : </p></b></label><input type="text" name="Next of Kin Names"   required="" /></div>
+            <label><b><p>Next of Kin Names : </p></b></label><input type="text" name="Next of Kin Names"   required="" placeholder="Enter Next of Kin Names" /></div>
             <div>
             <label><b><p>Next of Kin Contacts : </p></b></label>
-            <input type="number" name="Next of Kin Contacts"   required="" /></div>
+            <input type="number" name="Next of Kin Contacts"   required="" placeholder="Enter Next of Kin Contacts" /></div>
            <div>
             <label><b><p>Purpose of Travel : </p></b></label><input type="radio"  name="Purpose of Travel" value="Traveling" >Traveling
             <input type="radio"  name="Purpose of Travel" value="Stocking"  >Stocking
             </div>
              <div>
             <label for="Concerns, Comments & Compliments"><b><p>Concerns, Comments & Compliments : </p></b></label>
-              <textarea id="Concerns, Comments & Compliments" name="Concerns, Comments & Compliments" rows="1" cols="15" placeholder="add"></textarea><!--<input type="text" name="Concerns, Comments & Compliments"   required="" style="height: 120px;" /></td></div>
+              <textarea id="Concerns, Comments & Compliments" name="Concerns, Comments & Compliments" rows="3" cols="15" placeholder="add Concerns, Comments & Compliments"></textarea><!--<input type="text" name="Concerns, Comments & Compliments"   required="" style="height: 120px;" /></td></div>
             -->
          
 
@@ -47,34 +47,34 @@
           <h1>COVID-19 Checklist</h1>
   <tr>
     <th>Temperature<input name="Temperature" value="" size="2"></th>
-    <th>Age<input name="Age" value="" size="2"></th>
-    <th>ID/Passport Number<input name="Temperature" value="" size="8"></th>
+    <th>ID/Passport Number<input name="ID/Passport Number" value="" size="2"></th>
+    <th>If Passport (Indicate country of Origin)<input name="country of Origin" value="" size="8"></th>
   </tr>
   <tr>
-    <td height="50">Symptoms<ul><input type="checkbox" name="">High Fever<br>
+    <td height="50">Symptoms<ul><input type="checkbox" name="Symptoms">High Fever<br>
     <input type="checkbox" name="">Breath Shortness<br>
     <input type="checkbox" name="">Dry Cough<br>
     <input type="checkbox" name="">Sore Throat<br>
     <input type="checkbox" name="">Flu Like Symptoms</ul></td>
-    <td colspan="2">Age<input name="Age" value="" size="2"><br>
-      <hr>
-        Gender<input type="checkbox" name="Age" value="" size="2">M
-        <input type="checkbox" name="Age" value="" size="2">F<br>
+    <td height="50" colspan="2">Age<input name="Age" value="" size="2">
+      Gender<input type="checkbox" name="Gender" value="" size="2">M
+        <input type="checkbox" name="Gender" value="" size="2">F<br>
+        
         <hr>
-        Did You Travel In or Out Of RSA After 01/02/2020<input name="Age" value="" size="2"><br>
+        Have You Been In Direct Contact With A Person Known To Have Contracted Corona Virus:<br><input name="Direct Contact" type="checkbox" name="Direct Contact" value="" size="2">Y
+        <input type="checkbox" name="Direct Contact" value="" size="2">N <br>
         </td>
         
   </tr>
   <tr>
-    <td></td>
-    <td>If Yes, Name City and Country Below</td>
-    <td>City Travelled To/From</td>
+    <td>Passenger Wearing a Mask<input name="Mask" type="checkbox" name="Mask" value="" size="2">Y
+        <input type="checkbox" name="Mask" value="" size="2">N</td>
+    <td>Have you been Vaccinated?<input name="Vaccinated" type="checkbox" name="Vaccinated" value="" size="2">Y
+        <input type="checkbox" name="Vaccinated" value="" size="2">N</td>
+    <td>Passenger Hands Sanitized with +70% Alcohol Solution<br><input name="Sanitized" type="checkbox" name="Sanitized" value="" size="2">Y
+        <input type="checkbox" name="Sanitized" value="" size="2">N</td>
   </tr>
-  <tr>
-    <td>Centro comercial Moctezuma</td>
-    <td>Country Travelled To/From</td>
-    <td></td>
-  </tr>
+  
   <!--<tr>
     <td>Ernst Handel</td>
     <td>Roland Mendel</td>
