@@ -33,6 +33,8 @@
             <input type="number" name="Next of Kin Contacts"   required="" placeholder="Enter Next of Kin Contacts" /></div>
            <div>
             <label><b><p>Purpose of Travel : </p></b></label><input type="radio"  name="Purpose of Travel" value="Traveling" >Traveling
+          </div>
+          <div id="stock">
             <input type="radio"  name="Purpose of Travel" value="Stocking"  >Stocking
             </div>
              <div>
@@ -51,11 +53,7 @@
     <th>If Passport (Indicate country of Origin)<input name="country of Origin" value="" size="8"></th>
   </tr>
   <tr>
-    <td height="50">Symptoms<ul><input type="checkbox" name="Symptoms">High Fever<br>
-    <input type="checkbox" name="">Breath Shortness<br>
-    <input type="checkbox" name="">Dry Cough<br>
-    <input type="checkbox" name="">Sore Throat<br>
-    <input type="checkbox" name="">Flu Like Symptoms</ul></td>
+    <td height="50"></td>
     <td height="50" colspan="2">Age<input name="Age" value="" size="2">
       Gender<input type="checkbox" name="Gender" value="" size="2">M
         <input type="checkbox" name="Gender" value="" size="2">F<br>
@@ -111,7 +109,44 @@
     <td>France</td>
   </tr>-->
 </table>
-
+       <table id="customers">
+          <h1>COVID-19 Screening Checklist</h1>
+  <tr>
+    <th colspan="9">Tick either Yes (Y) or No(N) for each option </th>
+  </tr>
+  <tr>
+    <th>Loss of Sense of Smell</th>
+    <th>Changes in sense of taste</th>
+    <th>In the past 2 weeks, have you been told that you have COVID-19?</th>
+    <th>Are you waiting for a COVID-19 test result?</th>
+    <th>Fever?</th>
+    <th>Shortness of Breath?</th>
+    <th>Dry Cough?</th>
+    <th>Sore Throat?</th>
+    <th>Flu-like Symptoms?</th>
+  </tr>
+  <tr>
+    <td><input name="Sanitized" type="checkbox" name="Sanitized" value="" >Y
+        <input type="checkbox" name="Sanitized" value="" >N</td>
+  <td><input name="Sanitized" type="checkbox" name="Sanitized" value="" >Y
+        <input type="checkbox" name="Sanitized" value="" >N</td>
+        <td><input name="Sanitized" type="checkbox" name="Sanitized" value="" >Y
+        <input type="checkbox" name="Sanitized" value="" >N</td>
+        <td><input name="Sanitized" type="checkbox" name="Sanitized" value="" >Y
+        <input type="checkbox" name="Sanitized" value="" >N</td>
+        <td><input name="Sanitized" type="checkbox" name="Sanitized" value="" >Y
+        <input type="checkbox" name="Sanitized" value="" >N</td>
+        <td><input name="Sanitized" type="checkbox" name="Sanitized" value="" >Y
+        <input type="checkbox" name="Sanitized" value="" >N</td>
+        <td><input name="Sanitized" type="checkbox" name="Sanitized" value="" >Y
+        <input type="checkbox" name="Sanitized" value="" >N</td>
+        <td><input name="Sanitized" type="checkbox" name="Sanitized" value="" >Y
+        <input type="checkbox" name="Sanitized" value="" >N</td>
+        <td><input name="Sanitized" type="checkbox" name="Sanitized" value="" size="2">Y
+        <input type="checkbox" name="Sanitized" value="">N</td>
+        
+  </tr>
+</table>
          <input type="submit" name="submit" value="Submit"/>
          <input type="reset" name="reset">
 
@@ -143,9 +178,3 @@
 </body>
 </html>
 
-<!--background-color:  #ffffb3;
-          border: solid 1px #cbc9c9;
-          border-radius: 0 5px 5px 0;
-          height: 50px;
-          width: 100px;
-          opacity: 1;-->
