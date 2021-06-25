@@ -54,14 +54,38 @@
     <th>If Passport (Indicate country of Origin)<input name="country of Origin" value="" size="8"></th>
   </tr>
   <tr>
-    <td height="50"></td>
+    <td height="50">Symptoms
+      <ul>
+        <div id="Symptoms">
+        <li>Fever :<div><input name="Fever" type="radio" value="Y" >Y
+        <input type="radio" name="Fever" value="N" >N</div></li>
+        <br>
+        <li>Shortness of Breath :<div><input name="Shortness of Breath" type="radio" value="Y" >Y
+        <input type="radio" name="Shortness of Breath" value="N" >N</div></li>
+        <br>
+        <li>Dry Cough :<div><input name="Dry Cough" type="radio" value="Y" >Y
+        <input type="radio" name="Dry Cough" value="N" >N</div></li>
+        <br>
+        <li>Sore Throat :<div><input name="Sore Throat" type="radio" value="Y" >Y
+        <input type="radio" name="Sore Throat" value="N" >N</div></li>
+        <br>
+        <li>Flu-like Symptoms :<div><input name="Flu-like Symptoms" type="radio" value="Y" size="2">Y
+        <input type="radio" name="Flu-like Symptoms" value="N">N</div></li>
+        <br>
+        <li>Loss of Sense of Smell :<div><input name="Loss of Sense of Smell" type="radio" name="Sanitized" value="Y" >Y
+        <input type="radio" name="Loss of Sense of Smell" value="N" >N</div></li>
+        <br>
+        <li>Changes in sense of taste :<div><input name="Changes in sense of taste" type="radio" value="Y" >Y
+        <input type="radio" name="Changes in sense of taste" value="N" >N</div></li>
+      </ul></td>
+    </div>
     <td height="50" colspan="2">Age<input name="Age" value="" size="2">
       Gender<input type="radio" name="Gender" value="M">M
         <input type="radio" name="Gender" value="F" >F<br>
         
         <hr>
-        Have You Been In Direct Contact With A Person Known To Have Contracted Corona Virus:<br><input name="Direct Contact" type="radio" value="Y" size="2">Y
-        <input type="radio" name="Direct Contact" value="N">N <br>
+        In the past 2 weeks, have you been told that you have COVID-19? :<br><input name="COVID-19 in past 2 weeks?" type="radio" value="Y" >Y
+        <input type="radio" name="COVID-19 in past 2 weeks?" value="N" >N <br>
         </td>
         
   </tr>
@@ -72,46 +96,6 @@
         <input type="radio" name="Vaccinated" value="N" >N</td>
     <td>Passenger Hands Sanitized with +70% Alcohol Solution<br><input name="Sanitized" type="radio" value="Y" >Y
         <input type="radio" name="Sanitized" value="N" >N</td>
-  </tr>
-  
-  
-</table>
-       <table id="customers">
-          <h1>COVID-19 Screening Checklist</h1>
-  <tr>
-    <th colspan="9">Tick either Yes (Y) or No(N) for each option </th>
-  </tr>
-  <tr>
-    <th>Loss of Sense of Smell</th>
-    <th>Changes in sense of taste</th>
-    <th>In the past 2 weeks, have you been told that you have COVID-19?</th>
-    <th>Are you waiting for a COVID-19 test result?</th>
-    <th>Fever?</th>
-    <th>Shortness of Breath?</th>
-    <th>Dry Cough?</th>
-    <th>Sore Throat?</th>
-    <th>Flu-like Symptoms?</th>
-  </tr>
-  <tr>
-    <td><input name="Loss of Sense of Smell" type="radio" name="Sanitized" value="Y" >Y
-        <input type="radio" name="Loss of Sense of Smell" value="N" >N</td>
-  <td><input name="Changes in sense of taste" type="radio" value="Y" >Y
-        <input type="radio" name="Changes in sense of taste" value="N" >N</td>
-        <td><input name="COVID-19 in past 2 weeks?" type="radio" value="Y" >Y
-        <input type="radio" name="COVID-19 in past 2 weeks?" value="N" >N</td>
-        <td><input name="Waiting COVID-19 results?" type="radio" value="Y" >Y
-        <input type="radio" name="Waiting COVID-19 results?" value="N" >N</td>
-        <td><input name="Fever" type="radio" value="Y" >Y
-        <input type="radio" name="Fever" value="N" >N</td>
-        <td><input name="Shortness of Breath" type="radio" value="Y" >Y
-        <input type="radio" name="Shortness of Breath" value="N" >N</td>
-        <td><input name="Dry Cough" type="radio" value="Y" >Y
-        <input type="radio" name="Dry Cough" value="N" >N</td>
-        <td><input name="Sore Throat" type="radio" value="Y" >Y
-        <input type="radio" name="Sore Throat" value="N" >N</td>
-        <td><input name="Flu-like Symptoms" type="radio" value="Y" size="2">Y
-        <input type="radio" name="Flu-like Symptoms" value="N">N</td>
-        
   </tr>
 </table>
          <input type="submit" name="submit" value="Submit"/>
