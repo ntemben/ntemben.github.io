@@ -12,7 +12,8 @@
 <body style="background-color:#e2ca95;">
 <div id="form">
       
-  <form method="post" autocomplete="on" name="google-sheet">
+  <form method="post" autocomplete="on" name="google-sheet"
+    onsubmit="setTimeout(function(){window.location.reload();},10);">
   	<left><div class="header">
          <h1><header>PASSENGER INFORMATION</header></h1></div><br>
     	<hr>
@@ -39,7 +40,7 @@
             </div>
              <div>
             <label for="Concerns, Comments & Compliments"><b><p>Concerns, Comments & Compliments : </p></b></label>
-              <textarea id="Concerns, Comments & Compliments" name="Concerns, Comments & Compliments" rows="3" cols="15" placeholder="add Concerns, Comments & Compliments"></textarea><!--<input type="text" name="Concerns, Comments & Compliments"   required="" style="height: 120px;" /></td></div>
+              <textarea id="CCC" name="Concerns, Comments & Compliments" rows="4" cols="24" placeholder="add Concerns, Comments & Compliments"></textarea><!--<input type="text" name="Concerns, Comments & Compliments"   required="" style="height: 120px;" /></td></div>
             -->
          
 
@@ -48,66 +49,32 @@
          <table id="customers">
           <h1>COVID-19 Checklist</h1>
   <tr>
-    <th>Temperature<input name="Temperature" value="" size="2"></th>
+    <th>Temperature<input name="Temperature" value="" size="2" placeholder="°C"></th>
     <th>ID/Passport Number<input name="ID/Passport Number" value="" size="2"></th>
     <th>If Passport (Indicate country of Origin)<input name="country of Origin" value="" size="8"></th>
   </tr>
   <tr>
     <td height="50"></td>
     <td height="50" colspan="2">Age<input name="Age" value="" size="2">
-      Gender<input type="checkbox" name="Gender" value="" size="2">M
-        <input type="checkbox" name="Gender" value="" size="2">F<br>
+      Gender<input type="radio" name="Gender" value="M">M
+        <input type="radio" name="Gender" value="F" >F<br>
         
         <hr>
-        Have You Been In Direct Contact With A Person Known To Have Contracted Corona Virus:<br><input name="Direct Contact" type="checkbox" name="Direct Contact" value="" size="2">Y
-        <input type="checkbox" name="Direct Contact" value="" size="2">N <br>
+        Have You Been In Direct Contact With A Person Known To Have Contracted Corona Virus:<br><input name="Direct Contact" type="radio" value="Y" size="2">Y
+        <input type="radio" name="Direct Contact" value="N">N <br>
         </td>
         
   </tr>
   <tr>
-    <td>Passenger Wearing a Mask<input name="Mask" type="checkbox" name="Mask" value="" size="2">Y
-        <input type="checkbox" name="Mask" value="" size="2">N</td>
-    <td>Have you been Vaccinated?<input name="Vaccinated" type="checkbox" name="Vaccinated" value="" size="2">Y
-        <input type="checkbox" name="Vaccinated" value="" size="2">N</td>
-    <td>Passenger Hands Sanitized with +70% Alcohol Solution<br><input name="Sanitized" type="checkbox" name="Sanitized" value="" size="2">Y
-        <input type="checkbox" name="Sanitized" value="" size="2">N</td>
+    <td>Passenger Wearing a Mask<input name="Mask" type="radio" value="Y" size="2">Y
+        <input type="radio" name="Mask" value="N" size="2">N</td>
+    <td>Have you been Vaccinated?<input name="Vaccinated" type="radio" value="Y" >Y
+        <input type="radio" name="Vaccinated" value="N" >N</td>
+    <td>Passenger Hands Sanitized with +70% Alcohol Solution<br><input name="Sanitized" type="radio" value="Y" >Y
+        <input type="radio" name="Sanitized" value="N" >N</td>
   </tr>
   
-  <!--<tr>
-    <td>Ernst Handel</td>
-    <td>Roland Mendel</td>
-    <td>Austria</td>
-  </tr>
-  <tr>
-    <td>Island Trading</td>
-    <td>Helen Bennett</td>
-    <td>UK</td>
-  </tr>
-  <tr>
-    <td>Königlich Essen</td>
-    <td>Philip Cramer</td>
-    <td>Germany</td>
-  </tr>
-  <tr>
-    <td>Laughing Bacchus Winecellars</td>
-    <td>Yoshi Tannamuri</td>
-    <td>Canada</td>
-  </tr>
-  <tr>
-    <td>Magazzini Alimentari Riuniti</td>
-    <td>Giovanni Rovelli</td>
-    <td>Italy</td>
-  </tr>
-  <tr>
-    <td>North/South</td>
-    <td>Simon Crowther</td>
-    <td>UK</td>
-  </tr>
-  <tr>
-    <td>Paris spécialités</td>
-    <td>Marie Bertrand</td>
-    <td>France</td>
-  </tr>-->
+  
 </table>
        <table id="customers">
           <h1>COVID-19 Screening Checklist</h1>
@@ -126,24 +93,24 @@
     <th>Flu-like Symptoms?</th>
   </tr>
   <tr>
-    <td><input name="Sanitized" type="checkbox" name="Sanitized" value="" >Y
-        <input type="checkbox" name="Sanitized" value="" >N</td>
-  <td><input name="Sanitized" type="checkbox" name="Sanitized" value="" >Y
-        <input type="checkbox" name="Sanitized" value="" >N</td>
-        <td><input name="Sanitized" type="checkbox" name="Sanitized" value="" >Y
-        <input type="checkbox" name="Sanitized" value="" >N</td>
-        <td><input name="Sanitized" type="checkbox" name="Sanitized" value="" >Y
-        <input type="checkbox" name="Sanitized" value="" >N</td>
-        <td><input name="Sanitized" type="checkbox" name="Sanitized" value="" >Y
-        <input type="checkbox" name="Sanitized" value="" >N</td>
-        <td><input name="Sanitized" type="checkbox" name="Sanitized" value="" >Y
-        <input type="checkbox" name="Sanitized" value="" >N</td>
-        <td><input name="Sanitized" type="checkbox" name="Sanitized" value="" >Y
-        <input type="checkbox" name="Sanitized" value="" >N</td>
-        <td><input name="Sanitized" type="checkbox" name="Sanitized" value="" >Y
-        <input type="checkbox" name="Sanitized" value="" >N</td>
-        <td><input name="Sanitized" type="checkbox" name="Sanitized" value="" size="2">Y
-        <input type="checkbox" name="Sanitized" value="">N</td>
+    <td><input name="Loss of Sense of Smell" type="radio" name="Sanitized" value="Y" >Y
+        <input type="radio" name="Loss of Sense of Smell" value="N" >N</td>
+  <td><input name="Changes in sense of taste" type="radio" value="Y" >Y
+        <input type="radio" name="Changes in sense of taste" value="N" >N</td>
+        <td><input name="COVID-19 in past 2 weeks?" type="radio" value="Y" >Y
+        <input type="radio" name="COVID-19 in past 2 weeks?" value="N" >N</td>
+        <td><input name="Waiting COVID-19 results?" type="radio" value="Y" >Y
+        <input type="radio" name="Waiting COVID-19 results?" value="N" >N</td>
+        <td><input name="Fever" type="radio" value="Y" >Y
+        <input type="radio" name="Fever" value="N" >N</td>
+        <td><input name="Shortness of Breath" type="radio" value="Y" >Y
+        <input type="radio" name="Shortness of Breath" value="N" >N</td>
+        <td><input name="Dry Cough" type="radio" value="Y" >Y
+        <input type="radio" name="Dry Cough" value="N" >N</td>
+        <td><input name="Sore Throat" type="radio" value="Y" >Y
+        <input type="radio" name="Sore Throat" value="N" >N</td>
+        <td><input name="Flu-like Symptoms" type="radio" value="Y" size="2">Y
+        <input type="radio" name="Flu-like Symptoms" value="N">N</td>
         
   </tr>
 </table>

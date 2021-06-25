@@ -52,7 +52,11 @@ input[type=text], [type=number]  {
       background: #ffffe6;
       }
 input [type=textarea], [type=radio] {
-      margin: 5px 0 0 -90px;
+      margin:/* 5px 0 0 -90px*/ auto;
+}
+#CCC {
+      margin: 10px 0 0 -110px;
+
 }
 #stock {margin: -25px 0 0 270px;
 
