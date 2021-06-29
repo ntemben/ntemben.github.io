@@ -90,14 +90,6 @@ input [type=textarea], [type=radio] {
   background-color: #04AA6D;
   color: white;
 }
-.surround {
-      /*border-radius: 5px; 
-      border: solid 1px #ccc;
-      box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
-      background: #ebebeb;*/ 
-
-
-}
 
 li {
       text-decoration: none;
