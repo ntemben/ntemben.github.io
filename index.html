@@ -18,32 +18,45 @@
          <h1><header>PASSENGER INFORMATION</header></h1></div><br>
     	<hr>
            
-                  <div class="form-group">
-             <label><b><p>Passenger Contact :</p> </b></label>
-            <input type="number" name="Passenger Contact"   required="" placeholder="Enter Contact" /><div>
-            </div>
-            <label><b><p>Surname : </p></b></label>
-            <input type="text" name="Surname"   required="" placeholder="Enter Surname" /></div>
-          <div>
-            <label><b><p>Full Names : </p></b></label><input type="text" name="Full Names"   required="" placeholder="Enter Full Names"/></div>
-            <div>
-            <label><b><p>Home Address : </p></b></label><input type="text" name="Home Address"   required="" placeholder="Enter Home Address"/></td></div>
-            <div>
-            <label><b><p>Next of Kin Names : </p></b></label><input type="text" name="Next of Kin Names"   required="" placeholder="Enter Next of Kin Names" /></div>
-            <div>
-            <label><b><p>Next of Kin Contacts : </p></b></label>
-            <input type="number" name="Next of Kin Contacts"   required="" placeholder="Enter Next of Kin Contacts" /></div>
-           <div>
-            <label><b><p>Purpose of Travel : </p></b></label><input type="radio"  name="Purpose of Travel" value="Traveling" >Traveling
-          </div>
-          <div id="stock">
+      <table id="fill"> 
+        <colgroup>
+        <col style="background-color:red">
+        <col style="background-color:yellow">
+      </colgroup>    
+          <tr>
+             <th><b>Passenger Contact : </b></th>
+            <th><input type="number" name="Passenger Contact"   required="" placeholder="Enter Contact" /></th>
+          </tr>
+          <tr>
+            <td><b>Surname : </b></td>
+            <td><input type="text" name="Surname"   required="" placeholder="Enter Surname" /></td>
+          </tr>
+          <tr>
+            <td><b>Full Names : </b></td>
+            <td><input type="text" name="Full Names"   required="" placeholder="Enter Full Names"/></td>
+            </tr>
+            <tr>
+            <td><b>Home Address : </b></td>
+            <td><input type="text" name="Home Address"   required="" placeholder="Enter Home Address"/></td>
+            </tr>
+            <tr>
+            <td><b>Next of Kin Names : </b></td>
+            <td><input type="text" name="Next of Kin Names"   required="" placeholder="Enter Next of Kin Names" /></tr>
+            <tr>
+            <td><b>Next of Kin Contacts : </b></td>
+            <td><input type="number" name="Next of Kin Contacts"   required="" placeholder="Enter Next of Kin Contacts" /></td>
+            </tr>
+            <tr>
+            <td><b>Purpose of Travel : </b></td>
+            <td><input type="radio"  name="Purpose of Travel" value="Traveling" >Traveling
+            <div id="stock">
             <input type="radio"  name="Purpose of Travel" value="Stocking"  >Stocking
-            </div>
-             <div>
-            <label for="Concerns, Comments & Compliments"><b><p>Concerns, Comments & Compliments : </p></b></label>
-              <textarea id="CCC" name="Concerns, Comments & Compliments" rows="4" cols="24" placeholder="add Concerns, Comments & Compliments"></textarea><!--<input type="text" name="Concerns, Comments & Compliments"   required="" style="height: 120px;" /></td></div>
+            </div></td>
+             <tr>
+            <td> <b>Concerns, Comments & Compliments : </b></td>
+              <td><textarea id="CCC" name="Concerns, Comments & Compliments" rows="4" cols="24" placeholder="add Concerns, Comments & Compliments"></textarea></td><!--<input type="text" name="Concerns, Comments & Compliments"   required="" style="height: 120px;" /></td></div>
             -->
-         
+         </table>
 
          <hr>
 

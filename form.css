@@ -41,7 +41,7 @@ form{
           padding-left: ;
         }
         
-input[type=text], [type=number]  {
+/*input[type=text], [type=number]  {
       width: 180px;
       height: 35px;
       margin: 10px 0 0 -110px;
@@ -58,14 +58,14 @@ input [type=textarea], [type=radio] {
       margin: 10px 0 0 -110px;
 
 }
-#stock {margin: -25px 0 0 270px;
+#stock {/*margin: -25px 0 0 270px;*/
 
 }
 
  h1{
           font-family: 'Indie Flower', cursive;;
         }
-        #customers {
+#customers {
   font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
   width: 100%;
@@ -90,7 +90,44 @@ input [type=textarea], [type=radio] {
   background-color: #04AA6D;
   color: white;
 }
+#fill {
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        margin: 10px 5px 15px -40px;
+        align-content: center;
+        border-color: none;
+}
+#fill td, #fill th {
+  border: 5px solid #e2ca95;
+  padding: 8px;
+  border-radius: 15px;
 
+}
+
+#fill tr/*:nth-child(even)*/{background-color: #f2f2f2;}
+
+#fill tr:hover {background-color: #f2f2f2;}
+
+#fill th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: black;
+}
 li {
       text-decoration: none;
 }
+#fill td:nth-child(n+2) { background-color: #ffffe6 }
+#fill th:nth-child(n+2) { background-color: #ffffe6 }
+#fill td:nth-child(1) { background-color: #ffffb3 }
+#fill th:nth-child(1) { background-color: #ffffb3 }
+input, [type=number],[type=text] {
+      
+  border: 2px solid #ffffe6;
+  border-radius: 5px;
+  border-color:#ffffe6 ;
+
+}
+
