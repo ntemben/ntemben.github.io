@@ -10,13 +10,18 @@
   
 </head>
 <body style="background-color:#e2ca95;">
+  <nav class="zone yellow">
+    <ul class="main-nav">
+      
+    </ul>
+  </nav>
 <div id="form">
       
   <form method="post" autocomplete="on" name="google-sheet"
     onsubmit="setTimeout(function(){window.location.reload();},10000);">
   	<left><div class="header">
          <h1><header>PASSENGER INFORMATION</header></h1></div><br>
-    	<hr>
+    	<hr style="width:90%;text-align:left;margin-left:0">
            
       <table id="fill"> 
         <colgroup>
@@ -44,7 +49,7 @@
             <td><input type="text" name="Next of Kin Names"   required="" placeholder="Enter Next of Kin Names" /></tr>
             <tr>
             <td><b>Next of Kin Contacts : </b></td>
-            <td><input type="number" name="Next of Kin Contacts"   required="" placeholder="Enter Next of Kin Contacts" /></td>
+            <td><input type="number" name="Next of Kin Contacts"   required="" placeholder="Enter Next of Kin Contacts" size="8" /></td>
             </tr>
             <tr>
             <td><b>Purpose of Travel : </b></td>
@@ -64,7 +69,7 @@
           <h1>COVID-19 Checklist</h1>
   <tr>
     <th>Temperature<input name="Temperature" value="" size="2" placeholder="°C"></th>
-    <th>ID/Passport Number<input name="ID/Passport Number" value="" size="2"></th>
+    <th>ID/Passport Number<input name="ID/Passport Number" value="" size="10"></th>
     <th>If Passport (Indicate country of Origin)<input name="country of Origin" value="" size="8"></th>
   </tr>
   <tr>
@@ -104,12 +109,12 @@
         
   </tr>
   <tr>
-    <td>Passenger Wearing a Mask<input name="Mask" type="radio" value="Y" size="2">Y
-        <input type="radio" name="Mask" value="N" size="2">N</td>
-    <td>Have you been Vaccinated?<input name="Vaccinated" type="radio" value="Y" >Y
-        <input type="radio" name="Vaccinated" value="N" >N</td>
-    <td>Passenger Hands Sanitized with +70% Alcohol Solution<br><input name="Sanitized" type="radio" value="Y" >Y
-        <input type="radio" name="Sanitized" value="N" >N</td>
+    <td>Passenger Wearing a Mask<div><input name="Mask" type="radio" value="Y" size="2">Y
+        <input type="radio" name="Mask" value="N" size="2">N</div></td>
+    <td>Have you been Vaccinated?<div><input name="Vaccinated" type="radio" value="Y" >Y
+        <input type="radio" name="Vaccinated" value="N" >N</div></td>
+    <td>Passenger Hands Sanitized with +70% Alcohol Solution<br><div><input name="Sanitized" type="radio" value="Y" >Y
+        <input type="radio" name="Sanitized" value="N" >N</div></td>
   </tr>
 </table>
          <input type="submit" name="submit" value="Submit"/>

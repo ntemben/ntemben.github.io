@@ -102,10 +102,12 @@ input [type=textarea], [type=radio] {
   border: 5px solid #e2ca95;
   padding: 8px;
   border-radius: 15px;
-
+  
 }
 
-#fill tr/*:nth-child(even)*/{background-color: #f2f2f2;}
+#fill tr/*:nth-child(even)*/{background-color: #f2f2f2;
+                              width: 100%;
+                        }
 
 #fill tr:hover {background-color: #f2f2f2;}
 
@@ -115,14 +117,22 @@ input [type=textarea], [type=radio] {
   text-align: left;
   background-color: #04AA6D;
   color: black;
+  
 }
 li {
       text-decoration: none;
 }
-#fill td:nth-child(n+2) { background-color: #ffffe6 }
-#fill th:nth-child(n+2) { background-color: #ffffe6 }
-#fill td:nth-child(1) { background-color: #ffffb3 }
-#fill th:nth-child(1) { background-color: #ffffb3 }
+#fill td:nth-child(n+2) { background-color: #ffffe6; 
+                              width: 100%;}
+#fill th:nth-child(n+2) { background-color: #ffffe6;
+                              width: 100%; }
+#fill td:nth-child(1) { 
+      background-color: #ffffb3;
+                        width: 100%; }
+#fill th:nth-child(1) { 
+      background-color: #ffffb3;
+      width: 100%;
+                         }
 input, [type=number],[type=text] {
       
   border: 2px solid #ffffe6;
@@ -130,4 +140,23 @@ input, [type=number],[type=text] {
   border-color:#ffffe6 ;
 
 }
+#fill td{
+      
+}
 
+.main-nav {
+      display: flex;
+      list-style: none;
+      font-size: 0.7em;
+      margin: 0;
+}
+.zone {
+      /*color: #FFF;
+      font-size: 2px;
+      border-radius: 4px;
+      border: 1px solid #bbb;
+      transition: all 0.3s linear;
+*/}
+li {
+      padding: 20px;
+}
