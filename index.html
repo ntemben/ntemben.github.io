@@ -25,8 +25,8 @@
            
       <table id="fill"> 
         <colgroup>
-        <col style="background-color:red">
-        <col style="background-color:yellow">
+        <col style="background-color:lightyellow;">
+        <col style="background-color:peachpuff;">
       </colgroup>    
           <tr>
              <th><b>Passenger Contact : </b></th>
@@ -53,70 +53,73 @@
             </tr>
             <tr>
             <td><b>Purpose of Travel : </b></td>
-            <td><input type="radio"  name="Purpose of Travel" value="Traveling" >Travelling
+            <td><input type="radio"  name="Purpose of Travel" value="Consulate/Embassy" >Consulate/Embassy
             <div id="stock">
             <input type="radio"  name="Purpose of Travel" value="Stocking"  >Stocking
             </div></td>
              <tr>
-            <td> <b>Concerns, Comments & Compliments : </b></td>
-              <td><textarea id="CCC" name="Concerns, Comments & Compliments" rows="4" cols="24" placeholder="add Concerns, Comments & Compliments"></textarea></td><!--<input type="text" name="Concerns, Comments & Compliments"   required="" style="height: 120px;" /></td></div>
+            <td> <b>Concerns, Comments, Complaints & Compliments : </b></td>
+              <td><textarea id="CCC" name="Concerns, Comments, Complaints & Compliments" rows="4" cols="24" placeholder="add Concerns, Comments, Complaints & Compliments"></textarea></td><!--<input type="text" name="Concerns, Comments & Compliments"   required="" style="height: 120px;" /></td></div>
             -->
          </table>
 
          <hr>
 
          <table id="customers">
-          <h1>COVID-19 Checklist</h1>
+          <h1></h1>
   <tr>
-    <th>Temperature<input name="Temperature" value="" size="2" placeholder="°C"></th>
-    <th>ID/Passport Number<input name="ID/Passport Number" value="" size="10"></th>
-    <th>If Passport (Indicate country of Origin)<input name="country of Origin" value="" size="8"></th>
+    <th colspan="4" ><h2>COVID-19 CHECKLIST </h2><p>Kindly answer the below questionaire if you have or had any of the symptoms below within the past 7-14 days</p></th>
   </tr>
   <tr>
-    <td height="50">Symptoms
-      <ul>
-        <div id="Symptoms">
-        <li>Fever :<div><input name="Fever" type="radio" value="Y" >Y
-        <input type="radio" name="Fever" value="N" >N</div></li>
+    <td height="50" colspan="3">
+        
+          <b>Temperature</b><input name="Temperature" value="" size="2" placeholder="°C" class="my-input"><br>
+          <br><b>Symptoms</b><br>
+        <br>High Fever :<div><input name="Fever" type="radio" value="Y" >Y
+        <input type="radio" name="Fever" value="N" >N</div>
         <br>
-        <li>Shortness of Breath :<div><input name="Shortness of Breath" type="radio" value="Y" >Y
-        <input type="radio" name="Shortness of Breath" value="N" >N</div></li>
+        Shortness of Breath :<div><input name="Shortness of Breath" type="radio" value="Y" >Y
+        <input type="radio" name="Shortness of Breath" value="N" >N</div>
         <br>
-        <li>Dry Cough :<div><input name="Dry Cough" type="radio" value="Y" >Y
-        <input type="radio" name="Dry Cough" value="N" >N</div></li>
+        Loss of Sense of Smell :<div><input name="Loss of Sense of Smell" type="radio" name="Sanitized" value="Y" >Y
+        <input type="radio" name="Loss of Sense of Smell" value="N" >N</div>
         <br>
-        <li>Sore Throat :<div><input name="Sore Throat" type="radio" value="Y" >Y
-        <input type="radio" name="Sore Throat" value="N" >N</div></li>
+
+        Changes in sense of taste :<div><input name="Changes in sense of taste" type="radio" value="Y" >Y
+        <input type="radio" name="Changes in sense of taste" value="N" >N</div>
         <br>
-        <li>Flu-like Symptoms :<div><input name="Flu-like Symptoms" type="radio" value="Y" size="2">Y
-        <input type="radio" name="Flu-like Symptoms" value="N">N</div></li>
-        <br>
-        <li>Loss of Sense of Smell :<div><input name="Loss of Sense of Smell" type="radio" name="Sanitized" value="Y" >Y
-        <input type="radio" name="Loss of Sense of Smell" value="N" >N</div></li>
-        <br>
-        <li>Changes in sense of taste :<div><input name="Changes in sense of taste" type="radio" value="Y" >Y
-        <input type="radio" name="Changes in sense of taste" value="N" >N</div></li>
-      </ul></td>
-    </div>
-    <td height="50" colspan="2">Age<input name="Age" value="" size="2">
+        Sore Throat :<div><input name="Sore Throat" type="radio" value="Y" >Y
+        <input type="radio" name="Sore Throat" value="N" >N</div><br>
+        Dry Cough :<div><input name="Dry Cough" type="radio" value="Y" >Y
+        <input type="radio" name="Dry Cough" value="N" >N</div>
+         <br>
+        Flu-like Symptoms :<div><input name="Flu-like Symptoms" type="radio" value="Y" size="2">Y
+        <input type="radio" name="Flu-like Symptoms" value="N">N</div>
+      </td>
+    
+    <td height="50" colspan="3">Age<input name="Age" value="" size="2">
       Gender<input type="radio" name="Gender" value="M">M
         <input type="radio" name="Gender" value="F" >F<br>
         
         <hr>
-        In the past 2 weeks, have you been told that you have COVID-19? :<br><input name="COVID-19 in past 2 weeks?" type="radio" value="Y" >Y
-        <input type="radio" name="COVID-19 in past 2 weeks?" value="N" >N <br>
-        </td>
+        Have you been in direct contact with a person known to have contracted Corona Virus :<br><input name="COVID-19 contact?" type="radio" value="Y" >Y
+        <input type="radio" name="COVID-19 contact?" value="N" >N <br><br>
+        Have you ever been in isolation or quarantine :<br><input name="COVID-19 contact?" type="radio" value="Y" >Y
+        <input type="radio" name="COVID-19 contact?" value="N" >N <br><br> 
+        Do you have any comorbidities or chronic illnesses :<br><input name="COVID-19 contact?" type="radio" value="Y" >Y
+        <input type="radio" name="COVID-19 contact?" value="N" >N <br><br>
+        Have you been vaccinated against any COVID-19 strain?<div><input name="Vaccinated" type="radio" value="Y" >Y
+        <input type="radio" name="Vaccinated" value="N" >N</div><br>
+        As a passenger are your hands sanitized with a +70% alcohol solution<br><div><input name="Sanitized" type="radio" value="Y" >Y
+        <input type="radio" name="Sanitized" value="N" >N</div>
+        <br>
+        As a passenger are you wearing a proper face mask?<div><input name="Mask" type="radio" value="Y" size="2">Y
+        <input type="radio" name="Mask" value="N" size="2">N</div>
         
   </tr>
-  <tr>
-    <td>Passenger Wearing a Mask<div><input name="Mask" type="radio" value="Y" size="2">Y
-        <input type="radio" name="Mask" value="N" size="2">N</div></td>
-    <td>Have you been Vaccinated?<div><input name="Vaccinated" type="radio" value="Y" >Y
-        <input type="radio" name="Vaccinated" value="N" >N</div></td>
-    <td>Passenger Hands Sanitized with +70% Alcohol Solution<br><div><input name="Sanitized" type="radio" value="Y" >Y
-        <input type="radio" name="Sanitized" value="N" >N</div></td>
-  </tr>
+  
 </table>
+      <input type="checkbox" name="checkbox"><span>I agree to the </a></span>
          <input type="submit" name="submit" value="Submit"/>
 
 
