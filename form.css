@@ -99,7 +99,7 @@ input [type=textarea], [type=radio] {
 #fill {
         font-family: Arial, Helvetica, sans-serif;
         border-collapse: collapse;
-        width: 60%;
+        width: 50%;
         margin: 10px 5px 15px -95px;/*top,right,bottom,left*/
         align-content: center;
         border-color: none;
@@ -131,7 +131,7 @@ li {
 #fill td:nth-child(n+2) { background-color: #ffffe6; 
                               width: 30%;}
 #fill th:nth-child(n+2) { background-color: #ffffe6;
-                              width: 50%; }
+                              width: 45%; }
 #fill td:nth-child(1) { 
       background-color: #ffffb3;
                         width: 30%; }
