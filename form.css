@@ -147,14 +147,15 @@ li {
       background-color: #ffffb3;
       width: 5%;
                          }
-input, [type=number],[type=text] {
+input, [type=number],[type=text], [type=number] {
       
   border: 2px solid #ffffe6;
   border-radius: 5px;
-  border-color:#ffffe6 ;
-  width: auto;
+  border-color:#ffffe6 /**/ ;
+  
 }
-#fill td{
+#alt input{
+      width: 500px;
       
 }
 
