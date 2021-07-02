@@ -21,7 +21,7 @@
     onsubmit="setTimeout(function(){window.location.reload();},10000);">
   	<left><div class="header">
          <h1><header>PASSENGER INFORMATION</header></h1></div><br>
-    	<hr style="width:90%;text-align:left;margin-left:0">
+    	<hr style="width:40%;text-align:left;margin-left:0">
            
       <table id="fill"> 
         <colgroup>
@@ -30,50 +30,54 @@
       </colgroup>    
           <tr>
              <th><b>Passenger Contact : </b></th>
-            <th><input type="number" name="Passenger Contact"   required="" placeholder="Enter Contact" /></th>
+            <th><input type="number" name="Passenger Contact"   required="" placeholder="Enter Contact"style="text-transform:uppercase" /></th>
+          </tr>
+          <tr>
+             <th><b>Alternative Passenger Contact : </b></th>
+            <th><input type="number" name="Alternative Passenger Contact"   required="" placeholder="Enter own second contact"style="text-transform:uppercase" /></th>
           </tr>
           <tr>
             <td><b>Surname : </b></td>
-            <td><input type="text" name="Surname"   required="" placeholder="Enter Surname" /></td>
+            <td><input type="text" name="Surname"   required="" placeholder="Enter Surname" style="text-transform:uppercase"  /></td>
           </tr>
           <tr>
             <td><b>Full Names : </b></td>
-            <td><input type="text" name="Full Names"   required="" placeholder="Enter Full Names"/></td>
+            <td><input type="text" name="Full Names"   required="" placeholder="Enter Full Names" style="text-transform:uppercase"/></td>
             </tr>
             <tr>
             <td><b>Home Address : </b></td>
-            <td><input type="text" name="Home Address"   required="" placeholder="Enter Home Address"/></td>
+            <td><input type="text" name="Home Address"   required="" placeholder="Enter Home Address"style="text-transform:uppercase"/></td>
             </tr>
             <tr>
             <td><b>Next of Kin Names : </b></td>
-            <td><input type="text" name="Next of Kin Names"   required="" placeholder="Enter Next of Kin Names" /></tr>
+            <td><input type="text" name="Next of Kin Names"   required="" placeholder="Enter Next of Kin Names" style="text-transform:uppercase"/></tr>
             <tr>
             <td><b>Next of Kin Contacts : </b></td>
-            <td><input type="number" name="Next of Kin Contacts"   required="" placeholder="Enter Next of Kin Contacts" size="8" /></td>
+            <td><input type="number" name="Next of Kin Contacts"   required="" placeholder="Enter Next of Kin Contacts" size="8" style="text-transform:uppercase" /></td>
             </tr>
             <tr>
             <td><b>Purpose of Travel : </b></td>
-            <td><input type="radio"  name="Purpose of Travel" value="Consulate/Embassy" >Consulate/Embassy
+            <td><input type="radio"  name="Purpose of Travel" value="Consulate" >Consulate<input type="radio"  name="Purpose of Travel" value="Stocking" >Stocking
             <div id="stock">
-            <input type="radio"  name="Purpose of Travel" value="Stocking"  >Stocking
+            <input type="text"  name="Purpose of Travel" value="" placeholder="Enter other purpose" size="22"  style="text-transform:uppercase">
             </div></td>
              <tr>
-            <td> <b>Concerns, Comments, Complaints & Compliments : </b></td>
+            <td> <b>Concerns, Comments, Complaints & Compliments: </b></td>
               <td><textarea id="CCC" name="Concerns, Comments, Complaints & Compliments" rows="4" cols="24" placeholder="add Concerns, Comments, Complaints & Compliments"></textarea></td><!--<input type="text" name="Concerns, Comments & Compliments"   required="" style="height: 120px;" /></td></div>
             -->
          </table>
 
-         <hr>
+         <hr style="width:90%;text-align:left;margin-left:0">
 
          <table id="customers">
           <h1></h1>
   <tr>
-    <th colspan="4" ><h2>COVID-19 CHECKLIST </h2><p>Kindly answer the below questionaire if you have or had any of the symptoms below within the past 7-14 days</p></th>
+    <th colspan="4" ><h2>COVID-19 CHECKLIST </h2><p>Kindly answer the following relating to any of the symptoms and screening questions </p></th>
   </tr>
   <tr>
     <td height="50" colspan="3">
         
-          <b>Temperature</b><input name="Temperature" value="" size="2" placeholder="°C" class="my-input"><br>
+          <b>Temperature °C</b><input name="Temperature" value="" size="2" placeholder="°C" class="my-input"><br>
           <br><b>Symptoms</b><br>
         <br>High Fever :<div><input name="Fever" type="radio" value="Y" >Y
         <input type="radio" name="Fever" value="N" >N</div>
@@ -97,17 +101,17 @@
         <input type="radio" name="Flu-like Symptoms" value="N">N</div>
       </td>
     
-    <td height="50" colspan="3">Age<input name="Age" value="" size="2">
-      Gender<input type="radio" name="Gender" value="M">M
+    <td height="50" colspan="3"><b>Age</b><input name="Age" value="" size="2"><b>
+      Gender</b><input type="radio" name="Gender" value="M">M
         <input type="radio" name="Gender" value="F" >F<br>
         
         <hr>
         Have you been in direct contact with a person known to have contracted Corona Virus :<br><input name="COVID-19 contact?" type="radio" value="Y" >Y
         <input type="radio" name="COVID-19 contact?" value="N" >N <br><br>
-        Have you ever been in isolation or quarantine :<br><input name="COVID-19 contact?" type="radio" value="Y" >Y
-        <input type="radio" name="COVID-19 contact?" value="N" >N <br><br> 
-        Do you have any comorbidities or chronic illnesses :<br><input name="COVID-19 contact?" type="radio" value="Y" >Y
-        <input type="radio" name="COVID-19 contact?" value="N" >N <br><br>
+        Have you ever been in isolation or quarantine :<br><input name="isolation or quarantine?" type="radio" value="Y" >Y
+        <input type="radio" name="isolation or quarantine?" value="N" >N <br><br> 
+        Do you have any comorbidities or chronic illnesses :<br><input name="comorbidities or chronic illnesses?" type="radio" value="Y" >Y
+        <input type="radio" name="comorbidities or chronic illnesses?" value="N" >N <br><br>
         Have you been vaccinated against any COVID-19 strain?<div><input name="Vaccinated" type="radio" value="Y" >Y
         <input type="radio" name="Vaccinated" value="N" >N</div><br>
         As a passenger are your hands sanitized with a +70% alcohol solution<br><div><input name="Sanitized" type="radio" value="Y" >Y
@@ -117,9 +121,18 @@
         <input type="radio" name="Mask" value="N" size="2">N</div>
         
   </tr>
+  <tr>
+    <th colspan="4" class="bottom"><p>We as the responsible party gaurantees that your personal information as the data subject will
+be held in compliance with our privacy policy and legislations such as POPIA as they ammend.
+
+By completing and submitting this form/questionaire you give consent as a customer that we can use your
+details to contact you again and further that a duly authorized body may access your 
+personal information as legally required.
+</p></th>
+
+  </tr>
   
 </table>
-      <input type="checkbox" name="checkbox"><span>I agree to the </a></span>
          <input type="submit" name="submit" value="Submit"/>
 
 
