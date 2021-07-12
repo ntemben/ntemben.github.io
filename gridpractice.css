@@ -1,4 +1,11 @@
-.radios {}
+#position {
+		text-align: safe-left;
+		padding-left: 10px;
+}
+#last 	{
+			padding-left: 20px;
+			text-align: center;
+}
 
 ul {
 	list-style-type: none;
