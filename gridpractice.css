@@ -16,11 +16,13 @@ ul {
 	background-color: #ffffe6;
 	border:5px solid #e2ca95 ; 
 	border-radius: 90px;
+	display: inline-table;
 
 }
 #first {
 	
 	background: #ffffb3;
+	display: inline-table;
 }
 input, [type=number],[type=text], [type=number] {
       
@@ -38,6 +40,8 @@ input, [type=number],[type=text], [type=number] {
 	border-radius: 40px;
 	padding: 0px 25px;
 	text-align: left;
+	display: inline-table;
+
 }
 .required:after {
     content:" *";
@@ -69,6 +73,7 @@ input, [type=number],[type=text], [type=number] {
 	text-transform: uppercase;
 	-webkit-transition: 0.2s all;
 	transition: 0.2s all;
+	display: inline;
 
 }
 
