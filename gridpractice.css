@@ -24,6 +24,21 @@ ul {
 	background: #ffffb3;
 	display: inline-table;
 }
+select#whatever.selectmenu {
+	height: 25px;
+	color: #191a1e;
+	border: none;
+	font-size: 16px;
+	font-weight: 400;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border-radius: 40px;
+	padding: 0px 10px;
+	text-align: left;
+	display: inline-table;
+
+
+}
 input, [type=number],[type=text], [type=number] {
       
   /*border: 2px solid #ffffe6;
@@ -47,9 +62,15 @@ input, [type=number],[type=text], [type=number] {
     content:" *";
     color: red;
   }
-.form-control {
+.booking-form .form-control {
 	height: 35px;
 	border: none;
+	font-size: 16px;
+	font-weight: 400;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border-radius: 40px;
+	
 }
 #form-btn	{
 	align-self: center;
@@ -74,7 +95,7 @@ input, [type=number],[type=text], [type=number] {
 	-webkit-transition: 0.2s all;
 	transition: 0.2s all;
 	display: inline;
-
+	
 }
 
 .green{
@@ -90,4 +111,19 @@ input, [type=number],[type=text], [type=number] {
     text-align: center;
     margin-bottom: 50px;
    
+}
+li .stockingspecs {
+	display: inline-table;
+	display: inline;
+	display: inherit;
+	display: initial;
+	display: inline-block;
+	display: inherit;
+	display: inline-flex;
+	display: inline-grid;
+	display: run-in;
+	font-size: 60px;
+}
+.last {
+	align-content: right;
 }

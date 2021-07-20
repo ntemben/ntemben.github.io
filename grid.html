@@ -12,204 +12,222 @@
 	<link rel="stylesheet" type="text/css" href="gridpractice.css">
 </head>
 <body style="background-color:#e2ca95;">
-	<div class="container">
+<div class="container">
+    <div class="booking-form">
 
-  <div class="row">
-    <div class="col col-4 col-sm-4 col-md-4 col-lg-4" id="first">
-      Trip Type
-    </div>
-    <div class="col col-8 col-sm-8 col-md-8 col-lg-8">
-    	<div class="radios" required>
-     <input type="radio" name="Trip Type" required="">Return
-     <input type="radio" name="Trip Type">One way
- 	</div>
-    </div>
-</div>
- <div class="row">
-    <div class="col col-4 col-sm-4 col-md-4 col-lg-4" id="first">
-      Departing point:
-    </div>
-    <div class="col col-8 col-sm-8 col-md-8 col-lg-8">
-     <input class="form-control" type="" name="" placeholder="City" style="text-transform:uppercase" required="">
-    </div>
-</div>
- <div class="row">
-    <div class="col col-4 col-sm-4 col-md-4 col-lg-4" id="first">
-      Destination:
-    </div>
-    <div class="col col-8 col-sm-8 col-md-8 col-lg-8">
-     <input class="form-control" type="" name="" placeholder="City"style="text-transform:uppercase">
-    </div>
-</div>
- <div class="row">
-    <div class="col col-4 col-sm-4 col-md-4 col-lg-4" id="first">
-      Departure date:
-    </div>
-    <div class="col col-8 col-sm-8 col-md-8 col-lg-8">
-     <input onchange="showDate(this.value)" type="date" class="date" class="form-control" id="position" class="position" style="text-transform:uppercase">
-        <div id="time"></div>
+        <div class="row">
+            <div class="col col-4 col-sm-4 col-md-4 col-lg-4" id="first">
+                
+                      Trip Type
+                    </div>
+                    <div class="col col-8 col-sm-8 col-md-8 col-lg-8">
+                    	<div class="radios" required>
+                             <input type="radio" name="Trip Type" required="">Return
+                             <input type="radio" name="Trip Type">One way
+                 	    </div>
+                    </div>
+        </div>
+         <div class="row">
+            <div class="col col-4 col-sm-4 col-md-4 col-lg-4" id="first">
+              Departing point:
+            </div>
+            <div class="col col-8 col-sm-8 col-md-8 col-lg-8">
+             <input class="form-control" type="" name="" placeholder="City" style="text-transform:uppercase" required="">
+            </div>
+        </div>
+         <div class="row">
+            <div class="col col-4 col-sm-4 col-md-4 col-lg-4" id="first">
+              Destination:
+            </div>
+            <div class="col col-7.5 col-sm-8 col-md-8 col-lg-8">
+             <input class="form-control" type="" name="" placeholder="City"style="text-transform:uppercase">
+            </div>
+        </div>
+         <div class="row">
+            <div class="col col-4 col-sm-4 col-md-4 col-lg-4" id="first">
+              Departure date:
+            </div>
+            <div class="col col-8 col-sm-8 col-md-8 col-lg-8">
+             <input onchange="showDate(this.value)" type="date" class="date" class="form-control" id="position" class="position" style="text-transform:uppercase">
+                <div id="time"></div>
 
-    </div>
-</div>
- <div class="row">
-    <div class="col col-4 col-sm-4 col-md-4 col-lg-4" id="first">
-      Return Date:
-    </div>
-    <div class="col col-8 col-sm-8 col-md-8 col-lg-8">
-     <input onchange="showDatetwo(this.value)" type="date" class="date" class="form-control" id="position" style="text-transform:uppercase"/>
-        <div id="timetwo"></div>
-    </div>
-</div>
- <div class="row">
-    <div class="col col-4 col-sm-4 col-md-4 col-lg-4" id="first">
-      Adults :
-    </div>
-    <div class="col col-8 col-sm-8 col-md-8 col-lg-8">
-     <select class="form-control">
-		<option>SELECT BELOW</option>
-		<option>1</option>
-		<option>2</option>
-		<option>3</option>
-        <option>4</option>
-        <option>5</option>
-        <option>6</option>
-        <option>7</option>
-        <option>8</option>
-        <option>9</option>
-        <option>10</option>
-        <option>11</option>
-        <option>12</option>
-        <option>13</option>
-        <option>14</option>
-        <option>15</option>
-        <option>16</option>
-        <option>17</option>
-        <option>18</option>
-        <option>19</option>
-        <option>20</option>
-        <option>21</option>
-        <option>22</option>
-	</select>
-    </div>
-</div>
- <div class="row">
-    <div class="col col-4 col-sm-4 col-md-4 col-lg-4" id="first">
-      Children :
-    </div>
-    <div class="col col-8 col-sm-8 col-md-8 col-lg-8">
-<select class="form-control">
-		<option>SELECT BELOW</option>
-		<option>1</option>
-		<option>2</option>
-		<option>3</option>
-	</select>
-	<span class="select-arrow"></span>
-    </div>
-</div>
- <div class="row">
-    <div class="col col-4 col-sm-4 col-md-4 col-lg-4" id="first">
-      Passenger Contact :
-    </div>
-    <div class="col col-8 col-sm-8 col-md-8 col-lg-8">
-     <input class="form-control" type="number" name="" placeholder="contact" style="text-transform:uppercase" text-align="safe-left" id="position" style="text-transform:uppercase" >
-    </div>
-</div>
- <div class="row">
-    <div class="col col-4 col-sm-4 col-md-4 col-lg-4" id="first">
-      <label><span>Alternative Passenger Contact:</span></label>
-    </div>
-    <div class="col col-8 col-sm-8 col-md-8 col-lg-8">
-     <input class="form-control" type="number" name="" placeholder="contact" id="position" style="text-transform:uppercase">
-    </div>
-</div>
- <div class="row">
-    <div class="col col-4 col-sm-4 col-md-4 col-lg-4" id="first">
-      Surname:
-    </div>
-    <div class="col col-8 col-sm-8 col-md-8 col-lg-8">
-     <input class="form-control" type="" name="" placeholder="Surname" style="text-transform:uppercase">
-    </div>
-</div>
- <div class="row">
-    <div class="col col-4 col-sm-4 col-md-4 col-lg-4" id="first">
-      Fullnames:
-    </div>
-    <div class="col col-8 col-sm-8 col-md-8 col-lg-8">
-     <input class="form-control" type="" name="" placeholder="Fullnames" style="text-transform:uppercase">
-    </div>
-</div>
- <div class="row">
-    <div class="col col-4 col-sm-4 col-md-4 col-lg-4" id="first">
-      Home Address:
-    </div>
-    <div class="col col-8 col-sm-8 col-md-8 col-lg-8">
-     <input class="form-control" type="" name="" placeholder="Home Address" style="text-transform:uppercase" >
-    </div>
-</div>
- <div class="row">
-    <div class="col col-4 col-sm-4 col-md-4 col-lg-4" id="first">
-     Next of Kin Names :
-    </div>
-    <div class="col col-8 col-sm-8 col-md-8 col-lg-8">
-     <input class="form-control" type="" name="" placeholder="Next of Kin Names" style="text-transform:uppercase" >
-    </div>
-</div>
- <div class="row">
-    <div class="col col-4 col-sm-4 col-md-4 col-lg-4" id="first">
-    Next of Kin Contacts :
-    </div>
-    <div class="col col-8 col-sm-8 col-md-8 col-lg-8">
-     <input class="form-control" type="" name="" placeholder="Next of Kin Contacts" style="text-transform:uppercase">
-    </div>
-</div>
- <div class="row">
-    <div class="col col-4 col-sm-4 col-md-4 col-lg-4" id="first">
-    Purpose Of Travel :
-    </div>
-    <div class="col col-8 col-sm-8 col-md-8 col-lg-8">
+            </div>
+        </div>
+         <div class="row">
+            <div class="col col-4 col-sm-4 col-md-4 col-lg-4" id="first">
+              Return Date:
+            </div>
+            <div class="col col-8 col-sm-8 col-md-8 col-lg-8">
+             <input onchange="showDatetwo(this.value)" type="date" class="date" class="form-control" id="position" style="text-transform:uppercase"/>
+                <div id="timetwo"></div>
+            </div>
+        </div>
+         <div class="row">
+            <div class="col col-4 col-sm-4 col-md-4 col-lg-4" id="first">
+              Adults :
+            </div>
+            <div class="col col-8 col-sm-8 col-md-8 col-lg-8">
+             <select class="form-control">
+        		<option>SELECT BELOW</option>
+        		<option>1</option>
+        		<option>2</option>
+        		<option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+                <option>16</option>
+                <option>17</option>
+                <option>18</option>
+                <option>19</option>
+                <option>20</option>
+                <option>21</option>
+                <option>22</option>
+        	</select>
+            </div>
+        </div>
+         <div class="row">
+            <div class="col col-4 col-sm-4 col-md-4 col-lg-4" id="first">
+              Children :
+            </div>
+            <div class="col col-8 col-sm-8 col-md-8 col-lg-8">
+        <select class="form-control">
+        		<option>SELECT BELOW</option>
+        		<option>1</option>
+        		<option>2</option>
+        		<option>3</option>
+        	</select>
+        	<span class="select-arrow"></span>
+            </div>
+        </div>
+         <div class="row">
+            <div class="col col-4 col-sm-4 col-md-4 col-lg-4" id="first">
+              Passenger Contact :
+            </div>
+            <div class="col col-8 col-sm-8 col-md-8 col-lg-8">
+             <input class="form-control" type="number" name="" placeholder="contact" style="text-transform:uppercase" text-align="safe-left" id="position" style="text-transform:uppercase" >
+            </div>
+        </div>
+         <div class="row">
+            <div class="col col-4 col-sm-4 col-md-4 col-lg-4" id="first">
+              <label><span>Alternative Passenger Contact:</span></label>
+            </div>
+            <div class="col col-8 col-sm-8 col-md-8 col-lg-8">
+             <input class="form-control" type="number" name="" placeholder="contact" id="position" style="text-transform:uppercase">
+            </div>
+        </div>
+         <div class="row">
+            <div class="col col-4 col-sm-4 col-md-4 col-lg-4" id="first">
+              Surname:
+            </div>
+            <div class="col col-8 col-sm-8 col-md-8 col-lg-8">
+             <input class="form-control" type="" name="" placeholder="Surname" style="text-transform:uppercase">
+            </div>
+        </div>
+         <div class="row">
+            <div class="col col-4 col-sm-4 col-md-4 col-lg-4" id="first">
+              Fullnames:
+            </div>
+            <div class="col col-8 col-sm-8 col-md-8 col-lg-8">
+             <input class="form-control" type="" name="" placeholder="Fullnames" style="text-transform:uppercase">
+            </div>
+        </div>
+         <div class="row">
+            <div class="col col-4 col-sm-4 col-md-4 col-lg-4" id="first">
+              Home Address:
+            </div>
+            <div class="col col-8 col-sm-8 col-md-8 col-lg-8">
+             <input class="form-control" type="" name="" placeholder="Home Address" style="text-transform:uppercase" >
+            </div>
+        </div>
+         <div class="row">
+            <div class="col col-4 col-sm-4 col-md-4 col-lg-4" id="first">
+             Next of Kin Names :
+            </div>
+            <div class="col col-8 col-sm-8 col-md-8 col-lg-8">
+             <input class="form-control" type="" name="" placeholder="Next of Kin Names" style="text-transform:uppercase" >
+            </div>
+        </div>
+         <div class="row">
+            <div class="col col-4 col-sm-4 col-md-4 col-lg-4" id="first">
+            Next of Kin Contacts :
+            </div>
+            <div class="col col-8 col-sm-8 col-md-8 col-lg-8">
+             <input class="form-control" type="" name="" placeholder="Next of Kin Contacts" style="text-transform:uppercase">
+            </div>
+        </div>
+         <div class="row">
+            <div class="col col-4 col-sm-4 col-md-4 col-lg-4" id="first">
+            Purpose Of Travel :
+            </div>
+            <div class="col col-8 col-sm-8 col-md-8 col-lg-8">
+                    
+                <ul>
+                        <li>
+                            <p>
+                                <Select Class="selectmenu" id="whatever" name="OS" class="form-control" onchange="markDirty();" required >
+                                    <option value="">SELECT BELOW</option>
+                                    <option value="Win">CONSULATE</option>
+                                    <!--<option value="ios">iOS</option>-->
+                                    <option value="stockinglist">STOCKING</option>
+                                </select>
+                            </p>
+                        </li>
+                        </ul>
+                
             
-        <ul>
-                <li>
-                    <p>
-                        <Select Class="selectmenu" id="whatever" name="OS" class="form-control" onchange="markDirty();" required >
-                            <option value="">SELECT BELOW</option>
-                            <option value="Win">CONSULATE</option>
-                            <!--<option value="ios">iOS</option>-->
-                            <option value="otheros">STOCKING</option>
-                        </select>
-                    </p>
-                </li>
-                <li class="osother">Please Specify:
-                    <label id="oslabel">
-                        <div > 
-                        <input type="checkbox" name=""><span></span>BLANKETS
-                        <input name="OSV" type="number" placeholder="BLANKETS QUANTITY" class=" form-control" >  
-                        <input type="checkbox" name="">DUVETS
-                        <input type="checkbox" name="">PILLOWS 
-                        <!-- <input name="Other OS" type="text" placeholder="Other OS" class="form-control" /> -->
-                    </label>
-                </li>
-                <li class="osother">ENTER QUANTITY:
-                    <label id="version">
-                        <input name="OSV" type="number" placeholder="BLANKETS QUANTITY" class="form-control" />
-                        <input name="OSV" type="number" placeholder="DUVETS QUANTITY" class="form-control" />
-                        <input name="OSV" type="number" placeholder="PILLOWS QUANTITY" class="form-control" />
-                    </label>
-                </li>
-                </ul>
-        
+        	</select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-4 col-sm-4 col-md-4 col-lg-4" id="first">
+            
+            </div>
+            <div class="col col-8 col-sm-8 col-md-8 col-lg-8">
+                <div class="last">                    
+                        <ul>
+                        
+                            <li class="stockingspecs">Please Specify:
+                                <label id="oslabel">
+                                    <div > 
+                                    <input type="checkbox" name=""><span></span>BLANKETS
+                                    <input name="OSV" type="number" placeholder="BLANKETS QUANTITY" class=" form-control" >  
+                                    <input type="checkbox" name="">DUVETS
+                                    <input type="checkbox" name="">PILLOWS 
+                                    <!-- <input name="Other OS" type="text" placeholder="Other OS" class="form-control" /> -->
+                                </label>
+                            </li>
+                            <li class="stockingspecs">ENTER QUANTITY:
+                                <label id="version">
+                                    <input name="OSV" type="number" placeholder="BLANKETS QUANTITY" class="form-control" />
+                                    <input name="OSV" type="number" placeholder="DUVETS QUANTITY" class="form-control" />
+                                    <input name="OSV" type="number" placeholder="PILLOWS QUANTITY" class="form-control" />
+                                </label>
+                            </li>
+                        </ul>
+                </div>
+                
+            
+            </select>
+            </div>
+        </div>
+            <div class="col-md-3">
+            <div class="form-btn">
+        		<button class="submit-btn">
+        		Book</button>
+        	</div>
+        </div>
     
-	</select>
+        </div>
     </div>
-</div>
-    <div class="col-md-3">
-    <div class="form-btn">
-		<button class="submit-btn">
-		Book</button>
-	</div>
-</div>
-    
-  </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -244,10 +262,10 @@
     $(document).ready(function () {
 $("select").change(function () {
     $("select option:selected").each(function () {
-        if ($(this).attr("value") == "otheros") {
-            $(".osother").show();
+        if ($(this).attr("value") == "stockinglist") {
+            $(".stockingspecs").show();
         } else {
-            $(".osother").hide();
+            $(".stockingspecs").hide();
         }
     });
 }).change();
