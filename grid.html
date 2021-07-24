@@ -11,62 +11,66 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="gridpractice.css">
 </head>
+
 <body style="background-color:#e2ca95;">
+    <form method="post" autocomplete="on" name="google-sheet"
+    onsubmit="setTimeout(function(){window.location.reload();},10000);">
+
 <div class="container">
     <div class="booking-form">
 
         <div class="row">
-            <div class="col col-4 col-sm-4 col-md-4 col-lg-4" id="first">
+            <div class="col col-3 col-sm-4 col-md-4 col-lg-4" id="first">
                 
                       Trip Type
                     </div>
-                    <div class="col col-8 col-sm-8 col-md-8 col-lg-8">
+                    <div class="col col-6 col-sm-4 col-md-8 col-lg-8">
                     	<div class="radios" required>
-                             <input type="radio" name="Trip Type" required="">Return
-                             <input type="radio" name="Trip Type">One way
+                             <input type="radio" name="Trip Type" required="" value="Return">Return
+                             <input type="radio" name="Trip Type" value="One way">One way
                  	    </div>
                     </div>
         </div>
          <div class="row">
-            <div class="col col-4 col-sm-4 col-md-4 col-lg-4" id="first">
+            <div class="col col-3 col-sm-4 col-md-4 col-lg-4" id="first">
               Departing point:
             </div>
-            <div class="col col-8 col-sm-8 col-md-8 col-lg-8">
+            <div class="col col-5 col-sm-4 col-md-8 col-lg-8">
              <input class="form-control" type="" name="" placeholder="City" style="text-transform:uppercase" required="">
             </div>
         </div>
          <div class="row">
-            <div class="col col-4 col-sm-4 col-md-4 col-lg-4" id="first">
+            <div class="col col-3 col-sm-4 col-md-4 col-lg-4" id="first">
               Destination:
             </div>
-            <div class="col col-7.5 col-sm-8 col-md-8 col-lg-8">
+            <div class="col  col-5 col-sm-4 col-md-8 col-lg-8">
              <input class="form-control" type="" name="" placeholder="City"style="text-transform:uppercase">
             </div>
         </div>
          <div class="row">
-            <div class="col col-4 col-sm-4 col-md-4 col-lg-4" id="first">
+            <div class="col col-3 col-sm-4 col-md-4 col-lg-4" id="first">
               Departure date:
             </div>
-            <div class="col col-8 col-sm-8 col-md-8 col-lg-8">
+            <div class="col col-5 col-sm-4 col-md-8 col-lg-8">
              <input onchange="showDate(this.value)" type="date" class="date" class="form-control" id="position" class="position" style="text-transform:uppercase">
                 <div id="time"></div>
 
             </div>
         </div>
          <div class="row">
-            <div class="col col-4 col-sm-4 col-md-4 col-lg-4" id="first">
+            <div class="col col-3 col-sm-4 col-md-4 col-lg-4" id="first">
               Return Date:
             </div>
-            <div class="col col-8 col-sm-8 col-md-8 col-lg-8">
+            <div class="col col-5 col-sm-4 col-md-8 col-lg-8">
              <input onchange="showDatetwo(this.value)" type="date" class="date" class="form-control" id="position" style="text-transform:uppercase"/>
                 <div id="timetwo"></div>
             </div>
         </div>
          <div class="row">
-            <div class="col col-4 col-sm-4 col-md-4 col-lg-4" id="first">
-              Adults :
+            <div class="col col-3 col-sm-4 col-md-4 col-lg-4" id="first">
+              Adults:
             </div>
-            <div class="col col-8 col-sm-8 col-md-8 col-lg-8">
+            <div class="col col-5 col-sm-4 col-md-8 col-lg-8">
              <select class="form-control">
         		<option>SELECT BELOW</option>
         		<option>1</option>
@@ -95,10 +99,10 @@
             </div>
         </div>
          <div class="row">
-            <div class="col col-4 col-sm-4 col-md-4 col-lg-4" id="first">
-              Children :
+            <div class="col col-3 col-sm-4 col-md-4 col-lg-4" id="first">
+              Children:
             </div>
-            <div class="col col-8 col-sm-8 col-md-8 col-lg-8">
+            <div class="col col-5 col-sm-4 col-md-8 col-lg-8">
         <select class="form-control">
         		<option>SELECT BELOW</option>
         		<option>1</option>
@@ -109,66 +113,66 @@
             </div>
         </div>
          <div class="row">
-            <div class="col col-4 col-sm-4 col-md-4 col-lg-4" id="first">
+            <div class="col col-3 col-sm-4 col-md-4 col-lg-4" id="first">
               Passenger Contact :
             </div>
-            <div class="col col-8 col-sm-8 col-md-8 col-lg-8">
+            <div class="col col-5 col-sm-4 col-md-8 col-lg-8">
              <input class="form-control" type="number" name="" placeholder="contact" style="text-transform:uppercase" text-align="safe-left" id="position" style="text-transform:uppercase" >
             </div>
         </div>
          <div class="row">
-            <div class="col col-4 col-sm-4 col-md-4 col-lg-4" id="first">
+            <div class="col col-3 col-sm-4 col-md-4 col-lg-4" id="first">
               <label><span>Alternative Passenger Contact:</span></label>
             </div>
-            <div class="col col-8 col-sm-8 col-md-8 col-lg-8">
+            <div class="col col-5 col-sm-4 col-md-8 col-lg-8">
              <input class="form-control" type="number" name="" placeholder="contact" id="position" style="text-transform:uppercase">
             </div>
         </div>
          <div class="row">
-            <div class="col col-4 col-sm-4 col-md-4 col-lg-4" id="first">
+            <div class="col col-3 col-sm-4 col-md-4 col-lg-4" id="first">
               Surname:
             </div>
-            <div class="col col-8 col-sm-8 col-md-8 col-lg-8">
+            <div class="col col-5 col-sm-4 col-md-8 col-lg-8">
              <input class="form-control" type="" name="" placeholder="Surname" style="text-transform:uppercase">
             </div>
         </div>
          <div class="row">
-            <div class="col col-4 col-sm-4 col-md-4 col-lg-4" id="first">
+            <div class="col col-3 col-sm-4 col-md-4 col-lg-4" id="first">
               Fullnames:
             </div>
-            <div class="col col-8 col-sm-8 col-md-8 col-lg-8">
+            <div class="col col-5 col-sm-4 col-md-8 col-lg-8">
              <input class="form-control" type="" name="" placeholder="Fullnames" style="text-transform:uppercase">
             </div>
         </div>
          <div class="row">
-            <div class="col col-4 col-sm-4 col-md-4 col-lg-4" id="first">
+            <div class="col col-3 col-sm-4 col-md-4 col-lg-4" id="first">
               Home Address:
             </div>
-            <div class="col col-8 col-sm-8 col-md-8 col-lg-8">
+            <div class="col col-5 col-sm-4 col-md-8 col-lg-8">
              <input class="form-control" type="" name="" placeholder="Home Address" style="text-transform:uppercase" >
             </div>
         </div>
          <div class="row">
-            <div class="col col-4 col-sm-4 col-md-4 col-lg-4" id="first">
-             Next of Kin Names :
+            <div class="col col-3 col-sm-4 col-md-4 col-lg-4" id="first">
+             Next of Kin Names:
             </div>
-            <div class="col col-8 col-sm-8 col-md-8 col-lg-8">
+            <div class="col col-5 col-sm-4 col-md-8 col-lg-8">
              <input class="form-control" type="" name="" placeholder="Next of Kin Names" style="text-transform:uppercase" >
             </div>
         </div>
          <div class="row">
-            <div class="col col-4 col-sm-4 col-md-4 col-lg-4" id="first">
-            Next of Kin Contacts :
+            <div class="col col-3 col-sm-4 col-md-4 col-lg-4" id="first">
+            Next of Kin Contacts:
             </div>
-            <div class="col col-8 col-sm-8 col-md-8 col-lg-8">
+            <div class="col col-5 col-sm-4 col-md-8 col-lg-8">
              <input class="form-control" type="" name="" placeholder="Next of Kin Contacts" style="text-transform:uppercase">
             </div>
         </div>
          <div class="row">
-            <div class="col col-4 col-sm-4 col-md-4 col-lg-4" id="first">
+            <div class="col col-3 col-sm-4 col-md-4 col-lg-4" id="first">
             Purpose Of Travel :
             </div>
-            <div class="col col-8 col-sm-8 col-md-8 col-lg-8">
+            <div class="col col-5 col-sm-4 col-md-8 col-lg-8">
                     
                 <ul>
                         <li>
@@ -188,30 +192,32 @@
             </div>
         </div>
         <div class="row">
-            <div class="col col-4 col-sm-4 col-md-4 col-lg-4" id="first">
+            <div class="col col-3 col-sm-4 col-md-4 col-lg-4" id="first">
             
             </div>
-            <div class="col col-8 col-sm-8 col-md-8 col-lg-8">
+            <div class="col col-12 col-sm-12 col-md-12 col-lg-12">
                 <div class="last">                    
                         <ul>
                         
                             <li class="stockingspecs">Please Specify:
+                                <br>
+                                <p>each person is entitled to a maximum of 20kg. Any additional parcel weight will incur an additional cost</p>
                                 <label id="oslabel">
-                                    <div > 
-                                    <input type="checkbox" name=""><span></span>BLANKETS
-                                    <input name="OSV" type="number" placeholder="BLANKETS QUANTITY" class=" form-control" >  
-                                    <input type="checkbox" name="">DUVETS
-                                    <input type="checkbox" name="">PILLOWS 
+                                    <table id="more">
+                                        <tr><th></th></tr>
+                                        <tr>
+                                    <td><input type="checkbox" name="">BLANKETS</td><td>
+                                    <input name="OSV" type="number" placeholder="BLANKETS QUANTITY" class=" form-control" ></td></tr> 
+                                    <tr><td> 
+                                    <input type="checkbox" name="">DUVETS</td><td><input name="OSV" type="number" placeholder="DUVETS QUANTITY" class="form-control" /></td></tr>
+                                    <tr><td>
+                                    <input type="checkbox" name="">PILLOWS</td><td><input name="OSV" type="number" placeholder="PILLOWS QUANTITY" class="form-control" size="5" />
+                                    </td></tr> 
                                     <!-- <input name="Other OS" type="text" placeholder="Other OS" class="form-control" /> -->
+                                    </table>
                                 </label>
                             </li>
-                            <li class="stockingspecs">ENTER QUANTITY:
-                                <label id="version">
-                                    <input name="OSV" type="number" placeholder="BLANKETS QUANTITY" class="form-control" />
-                                    <input name="OSV" type="number" placeholder="DUVETS QUANTITY" class="form-control" />
-                                    <input name="OSV" type="number" placeholder="PILLOWS QUANTITY" class="form-control" />
-                                </label>
-                            </li>
+                            
                         </ul>
                 </div>
                 
@@ -219,6 +225,17 @@
             </select>
             </div>
         </div>
+
+        <p>Disclaimer:
+            <br>
+            <ul>
+                <li>Booking by phone will cost R600</li>
+                <li>Booking by driver will cost R600</li>
+                <li>Booking by online will cost R550</li>
+                <li>Only senior citizens will be exempted</li>
+            </ul>
+            <p>(All booking to be done by 6pm. Any booking after the stipulated time will be recorded subject to availability)</p>
+        </p>
             <div class="col-md-3">
             <div class="form-btn">
         		<button class="submit-btn">
@@ -271,5 +288,26 @@ $("select").change(function () {
 }).change();
 });
 </script>
+
+</form>
+
+<script type="text/javascript">
+
+
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbwx2CJfjyf39RNZar2I-6jpfAhRWCwodnkptbrPvQXkUfqcbTJVbWwPdA8YjdEjoQjNlA/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('submit-btn', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response =>
+                 alert("You have successfully submitted."))
+
+                .catch(error => console.error('Error!', error.message))
+            })
+           
+  </script>
+
+
 </body>
 </html>
