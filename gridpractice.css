@@ -132,6 +132,20 @@ li .stockingspecs {
 	margin: 0px 0px 0px 0px;
 }
 #more td, #more th {
-  padding: 7px;
+  padding: 0px;
   
+  width: 0px;
+  
+}
+#more th, #more td{
+  padding: 2px;
+  
+  width: 80px;
+  
+}
+.form-control {
+	padding: 0px;
+}
+*, ::after, ::before {
+    box-sizing: content-box;
 }
