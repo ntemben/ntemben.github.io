@@ -13,8 +13,8 @@
 </head>
 
 <body style="background-color:#e2ca95;">
-    <form method="post" autocomplete="on" name="google-sheet"
-    onsubmit="setTimeout(function(){window.location.reload();},10000);">
+    <form method="post" autocomplete="on" name="google-sheet" id="myForm" 
+    onsubmit=" function(){alert('good');} /*setTimeout(function(){window.location.reload();},2000)*/;/*setTimeout(function(){ alert('Hello'); }, 10000);*/  /*window.location.href='https://api.whatsapp.com/send?phone=+27762881758';*/ ">
 
 <div class="container">
     <div class="booking-form">
@@ -36,7 +36,7 @@
               Departing point:
             </div>
             <div class="col col-5.5 col-sm-4 col-md-8 col-lg-8">
-             <input class="form-control" type="" name="" placeholder="City" style="text-transform:uppercase" required="">
+             <input class="form-control" type="text" name="Departing point" placeholder="City" style="text-transform:uppercase" required="">
             </div>
         </div>
          <div class="row">
@@ -44,7 +44,7 @@
               Destination:
             </div>
             <div class="col  col-5 col-sm-4 col-md-8 col-lg-8">
-             <input class="form-control" type="" name="" placeholder="City"style="text-transform:uppercase">
+             <input class="form-control" type="text" name="Destination" placeholder="City"style="text-transform:uppercase">
             </div>
         </div>
          <div class="row">
@@ -52,7 +52,7 @@
               Departure date:
             </div>
             <div class="col col-1 col-sm-4 col-md-8 col-lg-8">
-             <input onchange="showDate(this.value)" type="date" class="date" class="form-control" id="position" class="position" style="text-transform:uppercase">
+             <input onchange="showDate(this.value)" type="date" class="date" class="form-control" id="position" class="position" name="Departure date" style="text-transform:uppercase">
                 <div id="time"></div>
 
             </div>
@@ -62,7 +62,7 @@
               Return Date:
             </div>
             <div class="col col-1 col-sm-4 col-md-8 col-lg-8">
-             <input onchange="showDatetwo(this.value)" type="date" class="date" class="form-control" id="position" style="text-transform:uppercase"/>
+             <input onchange="showDatetwo(this.value)" type="date" class="date" class="form-control" id="position" name="Return Date" style="text-transform:uppercase"/>
                 <div id="timetwo"></div>
             </div>
         </div>
@@ -70,9 +70,9 @@
             <div class="col col-3 col-sm-4 col-md-4 col-lg-4" id="first">
               Adults:
             </div>
-            <div class="col col-7 col-sm-4 col-md-8 col-lg-8">
-             <select class="form-control">
-        		<option>SELECT BELOW</option>
+            <div class="col col-4.5 col-sm-4 col-md-8 col-lg-8">
+             <select class="form-control" name="Adults" >
+        		<option value="0">SELECT BELOW</option>
         		<option>1</option>
         		<option>2</option>
         		<option>3</option>
@@ -103,8 +103,8 @@
               Children:
             </div>
             <div class="col col-6.5 col-sm-4 col-md-8 col-lg-8">
-        <select class="form-control">
-        		<option>SELECT BELOW</option>
+        <select class="form-control" name="Children" >
+        		<option value="0">SELECT BELOW</option>
         		<option>1</option>
         		<option>2</option>
         		<option>3</option>
@@ -117,7 +117,7 @@
               Passenger Contact :
             </div>
             <div class="col col-5.5 col-sm-4 col-md-8 col-lg-8">
-             <input class="form-control" type="number" name="" placeholder="contact" style="text-transform:uppercase" text-align="safe-left" id="position" style="text-transform:uppercase" >
+             <input class="form-control" type="number" name="Passenger Contact" placeholder="contact" style="text-transform:uppercase" text-align="safe-left" id="position" style="text-transform:uppercase" >
             </div>
         </div>
          <div class="row">
@@ -125,7 +125,7 @@
               <label><span>Alternative Passenger Contact:</span></label>
             </div>
             <div class="col col-4.5 col-sm-4 col-md-8 col-lg-8">
-             <input class="form-control" type="number" name="" placeholder="contact" id="position" style="text-transform:uppercase">
+             <input class="form-control" type="number" name="Alternative Passenger Contact" placeholder="contact" id="position" style="text-transform:uppercase">
             </div>
         </div>
          <div class="row">
@@ -133,7 +133,7 @@
               Surname:
             </div>
             <div class="col col-6.5 col-sm-4 col-md-8 col-lg-8">
-             <input class="form-control" type="" name="" placeholder="Surname" style="text-transform:uppercase">
+             <input class="form-control" type="" name="Surname" placeholder="Surname" style="text-transform:uppercase">
             </div>
         </div>
          <div class="row">
@@ -141,7 +141,7 @@
               Fullnames:
             </div>
             <div class="col col-5.5 col-sm-4 col-md-8 col-lg-8">
-             <input class="form-control" type="" name="" placeholder="Fullnames" style="text-transform:uppercase">
+             <input class="form-control" type="" name="Fullnames" placeholder="Fullnames" style="text-transform:uppercase">
             </div>
         </div>
          <div class="row">
@@ -149,7 +149,7 @@
               Home Address:
             </div>
             <div class="col col-6.5 col-sm-4 col-md-8 col-lg-8">
-             <input class="form-control" type="" name="" placeholder="Home Address" style="text-transform:uppercase" >
+             <input class="form-control" type="" name="Home Address" placeholder="Home Address" style="text-transform:uppercase" >
             </div>
         </div>
          <div class="row">
@@ -157,7 +157,7 @@
              Next of Kin Names:
             </div>
             <div class="col col-6.5 col-sm-4 col-md-8 col-lg-8">
-             <input class="form-control" type="" name="" placeholder="Next of Kin Names" style="text-transform:uppercase" >
+             <input class="form-control" type="" name="Next of Kin Names" placeholder="Next of Kin Names" style="text-transform:uppercase" >
             </div>
         </div>
          <div class="row">
@@ -165,7 +165,7 @@
             Next of Kin Contacts:
             </div>
             <div class="col col-6.5 col-sm-4 col-md-8 col-lg-8">
-             <input class="form-control" type="" name="" placeholder="Next of Kin Contacts" style="text-transform:uppercase">
+             <input class="form-control" type="" name="Next of Kin Contacts" placeholder="Next of Kin Contacts" style="text-transform:uppercase">
             </div>
         </div>
          <div class="row">
@@ -177,11 +177,11 @@
                 <ul>
                         <li>
                             <p>
-                                <Select Class="selectmenu" id="whatever" name="OS" class="form-control" onchange="markDirty();" required >
-                                    <option value="">SELECT BELOW</option>
-                                    <option value="Win">CONSULATE</option>
+                                <Select Class="selectmenu" id="whatever" name="Purpose Of Travel" class="form-control" >
+                                    <option value="unspecified">SELECT BELOW</option>
+                                    <option value="CONSULATE">CONSULATE</option>
                                     <!--<option value="ios">iOS</option>-->
-                                    <option value="stockinglist">STOCKING</option>
+                                    <option value="STOCKING" id="stockinglist">STOCKING</option>
                                 </select>
                             </p>
                         </li>
@@ -206,15 +206,15 @@
                                     <table id="more">
                                         <tr><th></th></tr>
                                         <tr>
-                                    <td><input type="checkbox" name="">BLANKETS</td><td>
-                                    <input name="OSV" type="number" placeholder="QUANTITY" class=" form-control" ></td></tr> 
+                                    <td><input type="checkbox" name="BLANKETS" value="yes">BLANKETS</td><td>
+                                    <input name="BLANKETS QUANTITY" type="number" placeholder="QUANTITY" class=" form-control" ></td></tr> 
                                     <tr><td> 
-                                    <input type="checkbox" name="">DUVETS</td><td><input name="OSV" type="number" placeholder="QUANTITY" class="form-control" /></td></tr>
+                                    <input type="checkbox" name="DUVETS" value="yes">DUVETS</td><td><input name="DUVETS QUANTITY" type="number" placeholder="QUANTITY" class="form-control" /></td></tr>
                                     <tr><td>
-                                    <input type="checkbox" name="">PILLOWS</td><td><input name="OSV" type="number" placeholder=" QUANTITY" class="form-control" size="5" />
+                                    <input type="checkbox" name="PILLOWS" value="yes">PILLOWS</td><td><input name="PILLOWS QUANTITY" type="number" placeholder=" QUANTITY" class="form-control" size="5" />
                                     </td></tr>
                                     <tr><td>
-                                    <input type="text" name="" placeholder="Enter Other Commodity" size="10"></td><td><input name="OSV" type="number" placeholder="Quantity" class="form-control" size="5" />
+                                    <input type="text" name="Other Commodity" placeholder="Enter Other Commodity" size="10"></td><td><input name="Other Commodity QUANTITY" type="number" placeholder="Quantity" class="form-control" size="5" />
                                     </td></tr> 
                                     <!-- <input name="Other OS" type="text" placeholder="Other OS" class="form-control" /> -->
                                     </table>
@@ -239,16 +239,32 @@
             </ul>
             <p>(All booking to be done by 6pm. Any booking after the stipulated time will be recorded subject to availability)</p>
         </p>
+
+        <script>
+function myFunction() {
+  alert("Thank you for booking with us. You will be directed to our whatsApp line. Kindly text \"Booked\" to indicate your booking");
+}
+</script>
+
+
             <div class="col-md-3">
             <div class="form-btn">
-        		<button class="submit-btn">
-        		Book</button>
+                <!-- <input type="button" value="Book" class="submit-btn" id="btnsubmit" onclick="submitForm()"> -->
+                <input type="submit" name="submit" value="Book" class="submit-btn" onclick=" myFunction();  window.location.href='https://api.whatsapp.com/send?phone=+27762881758';" />
+
+       
+     
+
+        		<!-- <button class="submit-btn">
+        		Book</button> -->
         	</div>
         </div>
     
         </div>
     </div>
 </div>
+
+
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
@@ -282,7 +298,7 @@
     $(document).ready(function () {
 $("select").change(function () {
     $("select option:selected").each(function () {
-        if ($(this).attr("value") == "stockinglist") {
+        if ($(this).attr("id") == "stockinglist") {
             $(".stockingspecs").show();
         } else {
             $(".stockingspecs").hide();
@@ -297,14 +313,14 @@ $("select").change(function () {
 <script type="text/javascript">
 
 
-      const scriptURL = ''
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbyzd0IgUBTYDGcIbM_Fb-eIjhWYsy13RpE-zWJhjhPWzGS90mvTkvyWFZH7jfmEpSJ3/exec'
             const form = document.forms['google-sheet']
           
             form.addEventListener('submit', e => {
               e.preventDefault()
               fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response =>
-                 alert("You have successfully submitted."))
+                // .then(response =>
+                //  alert("You have successfully submitted."))
 
                 .catch(error => console.error('Error!', error.message))
             })

@@ -95,6 +95,7 @@ input, [type=number],[type=text], [type=number] {
 	-webkit-transition: 0.2s all;
 	transition: 0.2s all;
 	display: inline;
+	text-align: center;
 	
 }
 
