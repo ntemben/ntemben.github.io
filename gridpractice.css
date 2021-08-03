@@ -127,7 +127,11 @@ li .stockingspecs {
 }
 .last {
 	align-content: center;
-	padding-left: 32px;
+	padding-left: 40px;
+}
+.secondlast {
+	align-content: center;
+	padding-left: 0px;
 }
 #more {
 	margin: 0px 0px 0px 0px;
@@ -149,4 +153,24 @@ li .stockingspecs {
 }
 *, ::after, ::before {
     box-sizing: content-box;
+}
+.enterp {
+	padding-left: 0px;
+
+}
+.collast {
+	border-radius: 2px;
+	background-color: #ffffe6;
+	border:5px solid #e2ca95 ;
+	display: inline-table;
+}
+/*li{
+	list-style-type: circle;
+}*/
+li.disclaimer {
+	list-style-type: square;
+	padding-left: 0px;
+}
+li.disclaimer::marker {
+	padding-left: 10px;
 }

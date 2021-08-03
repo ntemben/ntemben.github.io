@@ -36,7 +36,18 @@
               Departing point:
             </div>
             <div class="col col-5.5 col-sm-4 col-md-8 col-lg-8">
-             <input class="form-control" type="text" name="Departing point" placeholder="City" style="text-transform:uppercase" required="">
+             <select class="form-control" name="Departing point" >
+                <option value="unspecified">SELECT BELOW</option>
+                <option>POLOKWANE</option>
+                <option>MOKOPANE</option>
+                <option>NABOOMSPRUIT</option>
+                <option>MODIMOLLE</option>
+                <option>PRETORIA</option>
+                <option>JOHANNESBURG</option>
+                <option>DURBAN</option>
+                <option>CAPE TOWN</option>
+                <option>PORT ELIZABETH</option>
+            </select>
             </div>
         </div>
          <div class="row">
@@ -44,7 +55,18 @@
               Destination:
             </div>
             <div class="col  col-5 col-sm-4 col-md-8 col-lg-8">
-             <input class="form-control" type="text" name="Destination" placeholder="City"style="text-transform:uppercase">
+             <select class="form-control" name="Destination" >
+                <option value="unspecified">SELECT BELOW</option>
+                <option>POLOKWANE</option>
+                <option>MOKOPANE</option>
+                <option>NABOOMSPRUIT</option>
+                <option>MODIMOLLE</option>
+                <option>PRETORIA</option>
+                <option>JOHANNESBURG</option>
+                <option>DURBAN</option>
+                <option>CAPE TOWN</option>
+                <option>PORT ELIZABETH</option>
+            </select>
             </div>
         </div>
          <div class="row">
@@ -105,9 +127,12 @@
             <div class="col col-6.5 col-sm-4 col-md-8 col-lg-8">
         <select class="form-control" name="Children" >
         		<option value="0">SELECT BELOW</option>
+        		<option>0</option>
         		<option>1</option>
         		<option>2</option>
-        		<option>3</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
         	</select>
         	<span class="select-arrow"></span>
             </div>
@@ -138,10 +163,10 @@
         </div>
          <div class="row">
             <div class="col col-3 col-sm-4 col-md-4 col-lg-4" id="first">
-              Fullnames:
+              Full Names:
             </div>
             <div class="col col-5.5 col-sm-4 col-md-8 col-lg-8">
-             <input class="form-control" type="" name="Fullnames" placeholder="Fullnames" style="text-transform:uppercase">
+             <input class="form-control" type="" name="Full Names" placeholder="Full Names" style="text-transform:uppercase">
             </div>
         </div>
          <div class="row">
@@ -179,9 +204,12 @@
                             <p>
                                 <Select Class="selectmenu" id="whatever" name="Purpose Of Travel" class="form-control" >
                                     <option value="unspecified">SELECT BELOW</option>
+                                    <option value="BUSINESS">BUSINESS</option>
                                     <option value="CONSULATE">CONSULATE</option>
-                                    <!--<option value="ios">iOS</option>-->
+                                    <option value="LEISURE / TOUR">LEISURE / TOUR</option>
                                     <option value="STOCKING" id="stockinglist">STOCKING</option>
+                                    <option type="text" value="" id="otherpurpose">OTHER</option>
+                                    
                                 </select>
                             </p>
                         </li>
@@ -195,13 +223,27 @@
             <div class="col col-3 col-sm-4 col-md-4 col-lg-4" id="first">
             
             </div>
-            <div class="col col-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="col col-12 col-sm-1 col-md-1 col-lg-12">
+                <div class="secondlast">                    
+                        <input type="text" class="enterp" name="" placeholder="ENTER OTHER PURPOSE" class="form-control" size="17">
+                </div>
+                
+            
+            </select>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col col-3 col-sm-4 col-md-4 col-lg-4" id="first">
+            
+            </div>
+            <div class="collast" class="col col-12 col-sm-12 col-md-12 col-lg-12">
                 <div class="last">                    
                         <ul>
                         
                             <li class="stockingspecs">Please Specify:
                                 <br>
-                                <p>each person is entitled to a maximum of 20kg. Any additional parcel weight will incur an additional cost</p>
+                                <p>Each person is entitled to a maximum of 20kg, with a limited size of 100cm (height), 50cm (width), 50cm (length). Any other parcel weight / dimensions will incur additional costs.</p>
                                 <label id="oslabel">
                                     <table id="more">
                                         <tr><th></th></tr>
@@ -211,10 +253,14 @@
                                     <tr><td> 
                                     <input type="checkbox" name="DUVETS" value="yes">DUVETS</td><td><input name="DUVETS QUANTITY" type="number" placeholder="QUANTITY" class="form-control" /></td></tr>
                                     <tr><td>
-                                    <input type="checkbox" name="PILLOWS" value="yes">PILLOWS</td><td><input name="PILLOWS QUANTITY" type="number" placeholder=" QUANTITY" class="form-control" size="5" />
-                                    </td></tr>
+                                    <input type="checkbox" name="PILLOWS" value="yes">PILLOWS</td><td><input name="PILLOWS QUANTITY" type="number" placeholder=" QUANTITY" class="form-control" size="5" /></td></tr>
                                     <tr><td>
-                                    <input type="text" name="Other Commodity" placeholder="Enter Other Commodity" size="10"></td><td><input name="Other Commodity QUANTITY" type="number" placeholder="Quantity" class="form-control" size="5" />
+                                    <input type="checkbox" name="BOXES" value="yes">BOXES</td><td><input name="BOXES QUANTITY" type="number" placeholder=" QUANTITY" class="form-control" size="5" /></td></tr>
+                                    <tr><td>
+                                    <input type="checkbox" name="STOCK/BAGS/LUGGAGE" value="yes">STOCK/BAGS/LUGGAGE</td><td><input name="STOCK/BAGS/LUGGAGE QUANTITY" type="number" placeholder=" QUANTITY" class="form-control" size="5" /></td></tr>
+                                    
+                                    <tr><td>
+                                    <input type="text" name="Other Commodity" placeholder="OTHER COMMODITIES" size="10" style="text-transform:uppercase"></td><td><input name="Other Commodity QUANTITY" type="number" placeholder="Quantity" class="form-control" size="5" />
                                     </td></tr> 
                                     <!-- <input name="Other OS" type="text" placeholder="Other OS" class="form-control" /> -->
                                     </table>
@@ -232,13 +278,17 @@
         <p>Disclaimer:
             <br>
             <ul>
-                <li>Booking by phone will cost R600</li>
-                <li>Booking by driver will cost R600</li>
-                <li>Booking online will cost R550</li>
-                <li>Only senior citizens will be exempted</li>
+                <li class="disclaimer">Booking through any other means than this application may incur additional costs.</li>
+                <li class="disclaimer">We do not encourage booking through the driver as this is not acceptable.</li>
+                <li class="disclaimer">Only senior citizens will be exempted from the first point</li>
+                <li class="disclaimer">All booking to be done between 07:30am and 07:30pm Monday to Thursday</li>
+                <li class="disclaimer">Friday: 07:30am - 12:30pm</li>
+                <li class="disclaimer">No bookings or calls or messages shall strictly be allowed on Saturday</li>
+                <li class="disclaimer">On Sunday bookings shall be done between 08:00am and 06:00pm</li>
+                <li class="disclaimer">Bookings for Sunday trips shall be done by 07:30pm Tuesday.</li>
+                <li class="disclaimer">Departure time from Polokwane to Johanesburg is at 05:30am Monday to Friday and at 04:15 Sunday.</li>
             </ul>
-            <p>(All booking to be done by 6pm. Any booking after the stipulated time will be recorded subject to availability)</p>
-        </p>
+            
 
         <script>
 function myFunction() {
@@ -307,6 +357,20 @@ $("select").change(function () {
 }).change();
 });
 </script>
+<script type="text/javascript">
+    $(document).ready(function () {
+$("select").change(function () {
+    $("select option:selected").each(function () {
+        if ($(this).attr("id") == "otherpurpose") {
+            $(".enterp").show();
+        } else {
+            $(".enterp").hide();
+        }
+    });
+}).change();
+});
+</script>
+
 
 </form>
 
