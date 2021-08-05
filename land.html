@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<section>
+  <img src="https://colporteur.co.za/wp-content/themes/Colporteur/img/logo.png" alt="Colporteur logo" width="60" height="60">
+</section>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Organised Party Passenger List</title>
+  <link rel="stylesheet" type="text/css" href="form.css">
+  
+</head>
+<body style="background-color:#e2ca95;">
+  <nav class="zone yellow">
+    <ul class="main-nav">
+      
+    </ul>
+  </nav>
+<div id="form">
+      
+  <form method="post" autocomplete="on" name="google-sheet"
+    onsubmit="setTimeout(function(){window.location.reload();},10000);">
+  	<left><div class="header">
+         <h1><header>PASSENGER INFORMATION</header></h1></div><br>
+    	<hr style="width:40%;text-align:left;margin-left:0">
+           
+      <table id="fill"> 
+        <colgroup>
+        <col style="background-color:lightyellow;">
+        <col style="background-color:peachpuff;">
+      </colgroup>    
+          <tr>
+             <th><b>Passenger Contact : </b></th>
+            <th><input type="number" name="Passenger Contact"   required="" placeholder="Enter Contact"style="text-transform:uppercase" size="30" /></th>
+          </tr>
+          <tr>
+             <th><b>Alternative Passenger Contact : </b></th>
+            <th><input type="number" name="Alternative Passenger Contact"   required="" placeholder="Enter own second contact"style="text-transform:uppercase" size="70" id="alt" /></th>
+          </tr>
+          <tr>
+            <td><b>Surname : </b></td>
+            <td><input type="text" name="Surname"   required="" placeholder="Enter Surname" style="text-transform:uppercase" size="70" /></td>
+          </tr>
+          <tr>
+            <td><b>Full Names : </b></td>
+            <td><input type="text" name="Full Names"   required="" placeholder="Enter Full Names" style="text-transform:uppercase" size="70"/></td>
+            </tr>
+            <tr>
+            <td><b>Home Address : </b></td>
+            <td><input type="text" name="Home Address"   required="" placeholder="Enter Home Address"style="text-transform:uppercase" size="70"/></td>
+            </tr>
+            <tr>
+            <td><b>Next of Kin Names : </b></td>
+            <td><input type="text" name="Next of Kin Names"   required="" placeholder="Enter Next of Kin Names" style="text-transform:uppercase" size="70"/></tr>
+            <tr>
+            <td><b>Next of Kin Contacts : </b></td>
+            <td><input type="number" name="Next of Kin Contacts"   required="" placeholder="Enter Next of Kin Contacts" size="8" style="text-transform:uppercase" size="70"/></td>
+            </tr>
+            <tr>
+            <td><b>Purpose of Travel : </b></td>
+            <td><input type="radio"  name="Purpose of Travel" value="Consulate" >Consulate<input type="radio"  name="Purpose of Travel" value="Stocking" >Stocking
+            <div id="stock">
+            <input type="text"  name="Purpose of Travel" value="" placeholder="Enter other purpose" size="70"  style="text-transform:uppercase">
+            </div></td>
+             <tr>
+            <td> <b>Concerns, Comments, Complaints & Compliments: </b></td>
+              <td><textarea id="CCC" name="Concerns, Comments, Complaints & Compliments" rows="4" cols="62" placeholder="add Concerns, Comments, Complaints & Compliments"></textarea></td><!--<input type="text" name="Concerns, Comments & Compliments"   required="" style="height: 120px;" /></td></div>
+            -->
+         </table>
+
+         <hr style="width:40%;text-align:left;margin-left:0">
+
+         <table id="customers">
+          <h1></h1>
+  <tr>
+    <th colspan="4" ><h2>COVID-19 CHECKLIST </h2><p>Kindly answer the following relating to any of the symptoms and screening questions </p></th>
+  </tr>
+  <tr>
+    <td height="50" colspan="3">
+        
+          <b>Temperature °C</b><input name="Temperature" value="" size="2" placeholder="°C" class="my-input"><br>
+          <br><b>Symptoms</b><br>
+        <br>High Fever :<div><input name="Fever" type="radio" value="Y" >Y
+        <input type="radio" name="Fever" value="N" >N</div>
+        <br>
+        Shortness of Breath :<div><input name="Shortness of Breath" type="radio" value="Y" >Y
+        <input type="radio" name="Shortness of Breath" value="N" >N</div>
+        <br>
+        Loss of Sense of Smell :<div><input name="Loss of Sense of Smell" type="radio" name="Sanitized" value="Y" >Y
+        <input type="radio" name="Loss of Sense of Smell" value="N" >N</div>
+        <br>
+
+        Changes in sense of taste :<div><input name="Changes in sense of taste" type="radio" value="Y" >Y
+        <input type="radio" name="Changes in sense of taste" value="N" >N</div>
+        <br>
+        Sore Throat :<div><input name="Sore Throat" type="radio" value="Y" >Y
+        <input type="radio" name="Sore Throat" value="N" >N</div><br>
+        Dry Cough :<div><input name="Dry Cough" type="radio" value="Y" >Y
+        <input type="radio" name="Dry Cough" value="N" >N</div>
+         <br>
+        Flu-like Symptoms :<div><input name="Flu-like Symptoms" type="radio" value="Y" size="2">Y
+        <input type="radio" name="Flu-like Symptoms" value="N">N</div>
+      </td>
+    
+    <td height="50" colspan="3"><b>Age</b><input name="Age" value="" size="2"><b>
+      Gender</b><input type="radio" name="Gender" value="M">M
+        <input type="radio" name="Gender" value="F" >F<br>
+        
+        <hr>
+        Have you been in direct contact with a person known to have contracted Corona Virus :<br><input name="COVID-19 contact?" type="radio" value="Y" >Y
+        <input type="radio" name="COVID-19 contact?" value="N" >N <br><br>
+        Have you ever been in isolation or quarantine :<br><input name="isolation or quarantine?" type="radio" value="Y" >Y
+        <input type="radio" name="isolation or quarantine?" value="N" >N <br><br> 
+        Do you have any comorbidities or chronic illnesses :<br><input name="comorbidities or chronic illnesses?" type="radio" value="Y" >Y
+        <input type="radio" name="comorbidities or chronic illnesses?" value="N" >N <br><br>
+        Have you been vaccinated against any COVID-19 strain?<div><input name="Vaccinated" type="radio" value="Y" >Y
+        <input type="radio" name="Vaccinated" value="N" >N</div><br>
+        As a passenger are your hands sanitized with a +70% alcohol solution<br><div><input name="Sanitized" type="radio" value="Y" >Y
+        <input type="radio" name="Sanitized" value="N" >N</div>
+        <br>
+        As a passenger are you wearing a proper face mask?<div><input name="Mask" type="radio" value="Y" size="2">Y
+        <input type="radio" name="Mask" value="N" size="2">N</div>
+        
+  </tr>
+  <tr>
+    <th colspan="4" class="bottom"><p>We as the responsible party gaurantees that your personal information as the data subject will
+be held in compliance with our privacy policy and legislations such as POPIA as they ammend.
+
+By completing and submitting this form/questionaire you give consent as a customer that we can use your
+details to contact you again and further that a duly authorized body may access your 
+personal information as legally required.
+</p></th>
+
+  </tr>
+  
+</table>
+         <input type="submit" name="submit" value="Submit"/>
+<br>
+<br>
+<br>
+<br>
+<a href="grid.html">Book</a>
+
+
+       </div>
+    </center>
+    </form>
+    </div>
+
+
+
+  <script type="text/javascript">
+
+
+	  const scriptURL = 'https://script.google.com/macros/s/AKfycbwx2CJfjyf39RNZar2I-6jpfAhRWCwodnkptbrPvQXkUfqcbTJVbWwPdA8YjdEjoQjNlA/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response =>
+                 alert("You have successfully submitted."))
+
+                .catch(error => console.error('Error!', error.message))
+            })
+           
+  </script>
+  
+</body>
+</html>
+
